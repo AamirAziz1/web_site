@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="seq_database_no" model="ir.sequence">
+            <field name="name">Database No</field>
+            <field name="code">database.no</field>
+            <field name="company_id" eval="None"/>
+            <field name="padding">8</field>
+        </record>
+    </data>
+</openerp>

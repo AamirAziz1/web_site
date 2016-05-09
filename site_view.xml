@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_add_sass_res_company_field_form" model="ir.ui.view">
+            <field name="name">res.company.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='oe_title']" position="before">
+                    <div class="oe_button_box" name="button_box">
+                        <field name="id" attrs="{'invisible': True}"/>
+                        <button string="控制面板"
+                                attrs="{'invisible':['|',('is_register','=',False),('version_id','=',False)]}"
+                                type="action" name="%(action_saas_control_panel_wizard)d"
+                                class="oe_inline oe_stat_button" icon="fa-compass"/>
+                    </div>
+                </xpath>
+                <xpath expr="//div[@class='oe_title']" position="after">
+                    <group>
+                        <group>
+                            <label for="business_id" string="行业"/>
+                            <div>
+                                <div class="address_format">
+                                    <field name="business_id" style="width: 60%%"
+                                           options="{'no_create': True,'no_open': True}"/>
+                                    <field attrs="{'invisible':[('business_id','=',False)]}" name="sub_business_id"
+                                           style="width: 40%%" domain="[('parent_id','=',business_id)]"
+                                           options="{'no_create': True,'no_open':True}"/>
+                                </div>
+                            </div>
+                            <field name="version_id" required="1"/>
+                            <field name="employee_id"/>
+                            <field name="sale_employee_id"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </xpath>
+
+                <xpath expr="//page[@name='configuration']" position="before">
+                    <page string="注册信息">
+                        <group>
+                            <group>
+                                <field name="contact_name" readonly="1"/>
+                                <field name="web_http"/>
+                                <field name="db_name" readonly="1"/>
+                                <field name="code" string="激活认证码" readonly="1"/>
+                                <field name="admin_password" readonly="1"/>
+                                <field name="is_register" readonly="1"/>
+                                <field name="born_uuid" string="唯一码" readonly="1"/>
+                                <field name="approve_date" readonly="1"/>
+                            </group>
+                            <group></group>
+                        </group>
+                        <group>
+                            <separator string="功能授权" colspan="4"/>
+                            <field name="groups_ids" colspan="4" nolabel="1"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- 公司信息表 添加字段-->
+        <record id="view_add_res_company_field_tree" model="ir.ui.view">
+            <field name="name">res.company.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="db_name"/>
+                    <field name="state"/>
+                    <field name="contact_name"/>
+                    <field name="employee_id"/>
+                    <field name="create_date" string="创建时间"/>
+                </xpath>
+                <xpath expr="//field[@name='partner_id']" position="replace">
+                </xpath>
+            </field>
+        </record>
+
+
+        <!--权限-->
+        <record id="view_born_version_groups_form" model="ir.ui.view">
+            <field name="name">权限</field>
+            <field name="model">born.version.groups</field>
+            <field name="arch" type="xml">
+                <form string="权限">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="group_id" style="width: 60%"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="note" colspan="4" placeholder="说明"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_born_version_groups_tree" model="ir.ui.view">
+            <field name="name">权限</field>
+            <field name="model">born.version.groups</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="权限">
+                    <field name="name"/>
+                    <field name="group_id"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_born_version_groups" model="ir.actions.act_window">
+            <field name="name">权限</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">born.version.groups</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--版本-->
+        <record id="view_born_version_form" model="ir.ui.view">
+            <field name="name">版本</field>
+            <field name="model">born.version</field>
+            <field name="arch" type="xml">
+                <form string="版本">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="template_id"></field>
+                            </group>
+                            <group>
+                            </group>
+                        </group>
+                        <group>
+                            <separator string="标准功能授权" colspan="4"/>
+                            <field name="groups_ids" colspan="4" nolabel="1"/>
+                        </group>
+                        <group>
+                            <field name="note" colspan="4" placeholder="说明"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_born_version_tree" model="ir.ui.view">
+            <field name="name">版本</field>
+            <field name="model">born.version</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="版本">
+                    <field name="name"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_born_version" model="ir.actions.act_window">
+            <field name="name">版本</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">born.version</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!--数据库模板-->
+        <record id="view_born_template_db_form" model="ir.ui.view">
+            <field name="name">数据库模板</field>
+            <field name="model">born.template.db</field>
+            <field name="arch" type="xml">
+                <form string="数据库模板">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="password" password="true"/>
+                                <field name="url"/>
+                            </group>
+                            <group>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_born_template_db_tree" model="ir.ui.view">
+            <field name="name">数据库模板</field>
+            <field name="model">born.template.db</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="数据库模板">
+                    <field name="name"/>
+                    <field name="url"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_born_template_db" model="ir.actions.act_window">
+            <field name="name">数据库模板</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">born.template.db</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="版本" id="menu_born_version" action="action_born_version" parent="born_odoo.menu_born_odoo_root"
+                  sequence="11"/>
+        <menuitem name="权限" id="menu_born_version_groups" action="action_born_version_groups"
+                  parent="born_odoo.menu_born_odoo_root" sequence="12"/>
+        <menuitem name="行业" id="menu_born_industry" action="born_odoo.action_born_industry"
+                  parent="born_odoo.menu_born_odoo_root" sequence="2"/>
+
+        <!--数据库模板-->
+        <record id="view_born_download_url_form" model="ir.ui.view">
+            <field name="name">软件下载地址</field>
+            <field name="model">born.download.url</field>
+            <field name="arch" type="xml">
+                <form string="软件下载地址">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="type"/>
+                                <field name="url"/>
+                            </group>
+                            <group>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_born_download_url_tree" model="ir.ui.view">
+            <field name="name">软件下载地址</field>
+            <field name="model">born.download.url</field>
+            <field name="arch" type="xml">
+                <tree string="软件下载地址">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="url"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_born_download_url" model="ir.actions.act_window">
+            <field name="name">软件下载地址</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">born.download.url</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="软件下载地址" id="menu_born_download_url" action="action_born_download_url" parent="born_odoo.menu_born_odoo_root"
+                   sequence="13"/>
+
+
+        <record model="ir.actions.act_window" id="action_born_investment_partner_form">
+            <field name="name">招商商户</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="domain">[('is_investment','=','True')]</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                点击来增加一个商户。
+              </p>
+            </field>
+        </record>
+
+        <menuitem name="招商商户" id="menu_born_investemnt_partner" parent="born_odoo.menu_born_odoo_root" action="action_born_investment_partner_form"
+                  sequence="2"></menuitem>
+    </data>
+</openerp>

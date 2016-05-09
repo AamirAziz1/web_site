@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" class="default js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths tablesaw-enhanced" >
+ <head>
+	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  	<title>商户注册</title>
+      <!--[if lte IE 8]> 
+     <style>.stage-container{display:none!important;}</style>
+<![endif]-->
+
+  	<meta name="author" content="BONN arborous@qq.com">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="robots" content="index, follow">
+  	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  	<link rel="stylesheet" href="static/src/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/style.css" type="text/css" />
+
+	<!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="static/src/css/onepage.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="static/src/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="static/src/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/components-md.css" type="text/css" />
+    <link rel="stylesheet" href="static/src/css/register.css" type="text/css" />
+  	<script type="text/javascript" src="static/src/js/jquery.js"></script>
+    <script type="text/javascript" src="static/src/js/plugins.js"></script>
+
+  	<script type="text/javascript" src="static/src/js/bootstrap-alert.js"></script>
+  	<script type="text/javascript" src="static/src/js/site.js"></script>
+     	
+ </head>
+ <body>
+		<div id="header-register" class="">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="/site/index" class="standard-logo" data-dark-logo="static/src/images/logo21.png"><img src="static/src/images/logo21.png" alt="Bonn Logo"></a>
+						<a href="/site/index" class="retina-logo" data-dark-logo="static/src/images/logo21@2x.png"><img src="static/src/images/logo21@2x.png" alt="Bonn Logo"></a>
+					</div><!-- #logo end -->
+
+				
+				</div>
+
+			</div>
+
+		</div><!-- #header end -->
+
+   
+    <div id="app-container">
+    	<div class="container" id="container">
+            <div id="body-top">
+                <div class="row stage-container">
+
+						<div class="stage tmm-current col-md-4 col-sm-4">
+							<div class="stage-header head-icon head-icon-lock head-number">1</div>
+							<div class="stage-content">
+								<h3 class="stage-title">注册账号</h3>
+							</div>
+						</div><!--/ .stage-->
+
+						<div id="second-stage" class="stage tmm-current col-md-4 col-sm-4">
+                            <div class="stage-header head-icon head-icon-user head-number">2</div>
+
+							<div class="stage-content">
+								<h3 class="stage-title">完善资料</h3>
+							</div>
+						</div><!--/ .stage-->
+
+						<div class="stage col-md-4 tmm-current col-sm-4">
+							<div class="stage-header head-icon head-icon-payment head-number">3</div>
+							<div class="stage-content">
+								<h3 class="stage-title">注册成功</h3>
+							</div>
+						</div><!--/ .stage-->
+
+						
+					</div><!--/ .row-->
+            </div>
+	    	<div id="body" class="register" style="padding:30px 0" >
+                	<h2 style="text-align:center">{{ title }}!</h2>
+                    <!--<p>{{ message }}</p>-->
+                    <p>公司信息已经注册，波恩公司审核成功之后，将会通过电话，短信或邮件通知您。！</p>
+
+		     </div>
+    	</div>
+    </div>
+    <div id="register-footer" class="noborder">
+
+			<div id="copyrights">
+				<div class="container center clearfix">
+                    上海波恩网络科技服务有限公司 版权所有.<br>客服电话:400-633-0515
+					
+                </div>
+			</div>
+
+		</div>
+     <script type="text/javascript">
+// Handlesmaterial design checkboxes
+     function handleMaterialDesign() {
+        // Material design ckeckbox and radio effects
+        $('body').on('click', '.md-checkbox > label, .md-radio > label', function() {
+            var the = $(this);
+            // find the first span which is our circle/bubble
+            var el = $(this).children('span:first-child');
+              
+            // add the bubble class (we do this so it doesnt show on page load)
+            el.addClass('inc');
+              
+            // clone it
+            var newone = el.clone(true);  
+              
+            // add the cloned version before our original
+            el.before(newone);  
+              
+            // remove the original so that it is ready to run on next click
+            $("." + el.attr("class") + ":last", the).remove();
+        }); 
+
+        if ($('body').hasClass('page-md')) { 
+            // Material design click effect
+            // credit where credit's due; http://thecodeplayer.com/walkthrough/ripple-click-effect-google-material-design       
+            $('body').on('click', 'a.btn, button.btn, input.btn, label.btn', function(e) { 
+                var element, circle, d, x, y;
+
+                element = $(this);
+      
+                if(element.find(".md-click-circle").length == 0) {
+                    element.prepend("<span class='md-click-circle'></span>");
+                }
+                    
+                circle = element.find(".md-click-circle");
+                circle.removeClass("md-click-animate");
+                
+                if(!circle.height() && !circle.width()) {
+                    d = Math.max(element.outerWidth(), element.outerHeight());
+                    circle.css({height: d, width: d});
+                }
+                
+                x = e.pageX - element.offset().left - circle.width()/2;
+                y = e.pageY - element.offset().top - circle.height()/2;
+                
+                circle.css({top: y+'px', left: x+'px'}).addClass("md-click-animate");
+            });
+        }
+
+        // Floating labels
+        var handleInput = function(el) {
+            if (el.val() != "") {
+                el.addClass('edited');
+            } else {
+                el.removeClass('edited');
+            }
+        } 
+
+        $('body').on('keydown', '.form-md-floating-label .form-control', function(e) { 
+            handleInput($(this));
+        });
+        $('body').on('blur', '.form-md-floating-label .form-control', function(e) { 
+            handleInput($(this));
+        });       
+       /* $('body').on('click','#show-text',function(e){
+                $('#modal-text').modal();
+                });*/
+    }
+handleMaterialDesign();
+    </script>
+<div class="modal fade bs-modal-lg" id="modal-text" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title">服务条款</h4>
+										</div>
+										<div class="modal-body">
+                                            服务条款
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn default" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+									<!-- /.modal-content -->
+								</div>
+								<!-- /.modal-dialog -->
+							</div>
+
+ </body>
+</html>

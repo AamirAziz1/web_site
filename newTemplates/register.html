@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en" class="default js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths tablesaw-enhanced" >
+ <head>
+	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  	<title>商户注册</title>
+    
+  	<meta name="author" content="BONN arborous@qq.com">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta name="robots" content="index, follow">
+  	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  	<link rel="stylesheet" href="static/src/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/style.css" type="text/css" />
+
+	<!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="static/src/css/onepage.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="static/src/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="static/src/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="static/src/css/components-md.css" type="text/css" />
+    <link rel="stylesheet" href="static/src/css/register.css" type="text/css"/>
+  	<script type="text/javascript" src="static/src/js/jquery.js"></script>
+     <!--[if lte IE 8]> 
+     <style>.stage-container{display:none!important;}</style>
+<![endif]-->
+<script type="text/javascript" src="static/src/js/plugins.js"></script>
+    
+  	<script type="text/javascript" src="static/src/js/bootstrap-alert.js"></script>
+  	<script type="text/javascript" src="static/src/js/site.js"></script>
+     	
+ </head>
+ <body>
+		<div id="header-register" class="">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="/site/index" class="standard-logo" data-dark-logo="static/src/images/logo21.png"><img src="static/src/images/logo21.png" alt="Bonn Logo"></a>
+						<a href="/site/index" class="retina-logo" data-dark-logo="static/src/images/logo21@2x.png"><img src="static/src/images/logo21@2x.png" alt="Bonn Logo"></a>
+					</div><!-- #logo end -->
+
+				
+				</div>
+
+			</div>
+
+		</div><!-- #header end -->
+
+   
+    <div id="app-container">
+    	<div class="container" id="container">
+            <div id="body-top">
+                <div class="row stage-container">
+
+						<div class="stage tmm-current col-md-4 col-sm-4">
+							<div class="stage-header head-icon head-icon-lock head-number">1</div>
+							<div class="stage-content">
+								<h3 class="stage-title">注册账号</h3>
+							</div>
+						</div><!--/ .stage-->
+
+						<div id="second-stage" class="stage col-md-4 col-sm-4">
+                            <div class="stage-header head-icon head-icon-user head-number">2</div>
+
+							<div class="stage-content">
+								<h3 class="stage-title">完善资料</h3>
+							</div>
+						</div><!--/ .stage-->
+
+						<div class="stage col-md-4 col-sm-4">
+							<div class="stage-header head-icon head-icon-payment head-number">3</div>
+							<div class="stage-content">
+								<h3 class="stage-title">注册成功</h3>
+							</div>
+						</div><!--/ .stage-->
+
+						
+					</div><!--/ .row-->
+            </div>
+	    	<div id="body" class="register" >
+                	<div id="message" class="alert" style="display:none">
+									            <strong style="color:red;" id="message_desc"></strong>
+									         </div>
+
+		    	<form action="/site/signup" id="signup" name="signup" method="POST">
+	    			
+
+	    				<div id="first-div" style="margin-top:40px;" >
+                            <div class="form-group form-md-line-input">
+										<input type="text" class="form-control required" name="phone" id="phone" placeholder="">
+                                        <label for="phone">手机(登录账号)</label>
+										<span class="help-block">输入您的手机号码</span>
+						   </div>
+
+                             <div class="form-group form-md-line-input has-info">
+
+                                 <div class="input-group">
+											<div class="input-group-control">
+                                                <input  placeholder="请输入右方图片中的文字" class="form-control"  id="image_code" name="image_code">
+												<label for="form_control_1">验证码</label>
+											</div>
+										<span class="input-group-btn btn-right" style="width: 25%" >
+                                            	<img  src="data:image/png;base64,{{ image_stream }}">
+											</span>
+                                        </div>
+                            </div>
+                           <div class="form-group form-md-line-input has-error">
+										<div class="input-group">
+											<div class="input-group-control">
+												<input type="text" class="form-control" name="code" id="code" placeholder="">
+												<label for="form_control_1">短信认证码</label>
+											</div>
+										    <span class="input-group-btn btn-right">
+                                            	<input name="btn-code" class="btn green-haze" id="btn-code" type="button" value="免费获取短信认证码" >
+											</span>
+                                        </div>
+									</div>
+            <div class="form-group form-md-line-input has-info">
+										<input type="password" class="form-control" id="password" name="password" placeholder="">
+										<label for="password">密码</label>
+									</div>
+            <div class="form-group form-md-line-input has-info">
+										<input type="password" class="form-control" name="confirm" id="confirm" placeholder="">
+										<label for="confirm">确认密码</label>
+									</div>
+                                    <div style="text-align:center">
+                                    <button type="button" id="btn-next" class="btn btn-circle blue-madison">下一步</button>
+                                </div>
+                    </div>
+
+
+	    						    				
+	    				<div id="second-div"  style="margin-top:40px;display: none;">
+                            <!--second-->
+                            <div class="row">
+                                <div class="col-md-6">
+                             <div class="form-group form-md-line-input form-md-floating-label has-info">
+                            	<input id="company_name" name="company_name" class="form-control" value="" />
+										<label for="company_name">公司名称</label>
+									</div>
+                                </div>
+                                <div class="col-md-6">
+                        <div class="form-group form-md-line-input form-md-floating-label has-info">
+                            	<input id="brand" name="brand" class="form-control" />
+										<label for="brand">品牌名称</label>
+									</div>
+                                </div>
+                            </div>
+
+                               <div class="row">
+                                <div class="col-md-6">
+
+                <div class="form-group form-md-line-input form-md-floating-label has-info">
+											<select class="form-control" style="height:35px;" 
+														id="industry" name="industry">
+                                                        <option value=""></option>
+														{% for industry in industrys %}
+														<option value="{{ industry.id }}" >{{ industry.name }}</option>
+														{% endfor %}
+													</select>
+										<label for="form_control_1">商户类型</label>
+									</div>
+                       </div>
+                       <div class="col-md-6">
+                        <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                	<select class="form-control" style="height:35px;" 
+															id="industry_category" name="industry_category">
+															<option value=""></option>
+															{% for industry_category in industry_categorys %}
+															<option value="{{ industry_category.id }}" >{{ industry_category.name }}</option>
+															{% endfor %}
+														</select>
+                                    <label for="industry_category">业务类型</label>
+                        </div>
+
+                    </div>
+                </div>
+                                            <div class="row">
+                                <div class="col-md-6">
+
+                                               <div class="form-group form-md-line-input form-md-floating-label has-info">
+                            	<input id="contact_name" name="contact_name" class="form-control" />
+										<label for="contact_name">联系人</label>
+									</div>
+                            </div>
+                            <div class="col-md-6">
+                        <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                            <input id="email" name="email" class="form-control" />
+                                            <label for="email">邮件地址</label>
+									</div>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                         <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                	<select class="form-control" id="state_id" name="state_id">
+                                                            <option value=""></option>
+															{% for state in states %}
+															<option value="{{ state.id }}" >{{ state.name }}</option>
+															{% endfor %}
+														</select>
+
+                                    <label for="state_id">省</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                		<select class="form-control" id="area_id" name="area_id">
+                                            <option value=""></option>
+															{% for country_state_area in country_state_areas %}
+															<option value="{{ country_state_area.id }}" >{{ country_state_area.name }}</option>
+															{% endfor %}
+														</select>
+                                    <label for="area_id">市</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="form-group form-md-line-input form-md-floating-label has-info">
+                                <select class="form-control" id="subdivide_id" name="subdivide_id">
+                                    <option value=""></option>
+															{% for state_area_subdivide in state_area_subdivides %}
+															<option value="{{ state_area_subdivide.id }}" >{{ state_area_subdivide.name }}</option>
+															{% endfor %}
+														</select>
+                                    <label for="subdivide_id">县/区</label>
+                        </div>
+                    </div>
+                                    
+                </div>
+                 <div class="form-group form-md-line-input form-md-floating-label has-info">
+                      <input type="text" class="form-control" id="street" name="street" value=""/>
+                      <label for="street">详情地址(街道)</label>
+                 </div>
+                 <div class="md-checkbox has-success">
+											<input type="checkbox" id="checkbox14" checked  class="md-check">
+											<label for="checkbox14">
+											<span></span>
+											<span class="check"></span>
+											<span class="box"></span>
+                                           </label><span> 我同意<a href="#modal-text" id="show-text" style="color:blue" data-toggle="modal" class="showtext">服务条款</a></span>
+
+                                       </div>
+                    <div style="text-align:center">
+                    	<button id="btn-save" class="btn btn-circle btn-success" style="margin-bottom:5px;width:100px;" type="button" >保存</button>
+                    </div>
+
+
+
+                            <!--/second-->
+                        </div>
+	    			
+						    				<script type="text/javascript">
+	    				$('#btn-next').attr("disabled","disabled");
+	    					
+		    				function validate_data(){
+		    					var form = document.signup;
+		    				    var	message="";
+					        	if(form.phone.value == ""){
+									message="请输入手机号码";
+									form.phone.focus();
+					        	}else if(form.code.value == ""){
+									message="请输入验证码";
+									form.code.focus();
+						        }else if(form.password.value == ""){
+						        	message="请输入密码";
+						        	form.password.focus();
+						        }else if(form.password.value.length<6){
+						        	message="密码至少6位";
+						        	form.password.focus();
+							    }else if(form.password.value != form.confirm.value){
+							    	message="两次输入的密码不一致";
+							    	form.confirm.focus();
+							    }
+							    if(message!=""){
+							    	$('#message').show();
+						        	$('#message_desc').text(message);
+						        	return false;
+								}else{
+									return true;
+								}
+		    				}
+
+		    				function validate_company_data(){
+		    					var form = document.signup;
+		    					message="";
+					        	if(form.industry.value == ""){
+									message="请选择商户类型";
+									form.industry.focus();
+						        }else if(form.industry_category.value == ""){
+						        	message="请选择业务类型";
+						        	form.industry_category.focus();
+						        }else if(form.industry_category.value == ""){
+						        	message="请选择业务类型";
+						        	form.industry_category.focus();
+						        }else if(form.brand.value == ""){
+						        	message="请输入品牌名称";
+						        	form.company_name.focus();
+						        }else if(form.contact_name.value == ""){
+						        	message="请输入联系人";
+						        	form.contact_name.focus();
+							    }else if(form.email.value == ""){
+						        	message="请输入邮箱地址";
+						        	form.email.focus();
+							    }else if(!validate_email(form.email.value)){
+					        		message="请输入正确的邮箱地址";
+					        		form.email.focus();
+							    }else if(form.state_id.value == ""){
+						        	message="请选择省";
+						        	form.state_id.focus();
+							    }else if(form.street.value == ""){
+						        	message="请输入详细地址";
+						        	form.street.focus();
+							    }
+
+							    if(message!=""){
+							    	$('#message').show();
+						        	$('#message_desc').text(message);
+						        	return false;
+								}else{
+									return true;
+								}
+		    				}
+
+		    				var wait=60;
+		    				function time() {
+		    					 if (wait == 0) {
+	    				            $('#btn-code').removeAttr("disabled");        
+	    				            $('#btn-code').val("免费获取验证码");
+	    				            wait = 60;
+	    				        } else { 
+	    				        	$('#btn-code').attr("disabled","disabled");
+	    				            value="重新发送(" + wait + ")";
+	    				            $('#btn-code').val(value);
+	    				            wait--;
+	    				            setTimeout(function() {
+	    				                time()
+	    				            },
+	    				            1000)
+	    				        }
+				    		}
+	    					$('#btn-code').click(function() {
+	    						var form = document.signup;
+	    						if(form.phone.value == ""){
+									message="请输入手机号码";
+									form.phone.focus();
+									return true;
+	    						}
+
+                                if(form.image_code.value == ""){
+									message="请输入图形验证码";
+									form.image_code.focus();
+									return true;
+	    						}
+
+
+	    						$('#btn-code').attr("disabled","disabled");
+	    						var city_obj = $.ajax({
+						        	method: 'GET',
+						        	url: "/site/json/get_code",
+						        	data: "phone="+$('#phone').val()+"&image_code="+$('#image_code').val(),
+						        	success: function(msg){
+	    								var obj = eval('(' + msg + ')');
+	    								if(obj.result==true){
+	    									time();
+	    									$('#btn-next').removeAttr("disabled");
+		    							}else{
+		    								$('#btn-code').removeAttr("disabled");
+			    						}
+	    								$('#message').show();
+							        	$('#message_desc').text(obj.message);
+						        	}
+						        });
+	        				});
+	    				
+	    					$('#btn-next').click(function() {
+	    						$('#message').hide();
+					        	$('#message_desc').text("");
+
+					        	if(validate_data()){
+		    						var city_obj = $.ajax({
+							        	method: 'GET',
+							        	url: "/site/json/validate_email",
+							        	data: "code="+$('#code').val()+"&phone="+$('#phone').val(),
+							        	success: function(msg){
+		    								var obj = eval('(' + msg + ')');
+							        		if(obj.result==true){
+							        			$('#first-div').fadeOut();
+		    									$('#second-div').fadeIn('slow');
+                                                $('#second-stage').addClass('tmm-current');
+                        
+									        }else{
+									        	$('#message').show();
+									        	$('#message_desc').text(obj.message);
+									        	document.signup.email.focus();
+										    }
+							        		return true;
+							        	}
+							        });
+	    						}
+	        				});
+	        				
+	    					$('#btn-save').click(function() {
+	    						$('#btn-save').attr("disabled","disabled");
+	    						$('#message').hide();
+					        	$('#message_desc').text("");
+					        	if(validate_company_data()){
+									var company_obj = $.ajax({
+							        	method: 'GET',
+							        	url: "/site/json/validate_company_name",
+							        	data: "company_name="+$('#company_name').val(),
+							        	success: function(msg){
+		    								var obj = eval('(' + msg + ')');
+							        		if(obj.result==true){
+		    									$('#signup').submit();
+									        }else{
+									        	$('#message').show();
+									        	$('#message_desc').text(obj.message);
+									        	document.signup.company_name.focus();
+									        	$('#btn-save').removeAttr("disabled");
+										    }
+							        		return true;
+							        	}
+							        });
+					        	}else{
+					        		$('#btn-save').removeAttr("disabled");
+						        }
+	        				});
+	    				</script>
+	    			</form>
+		    </div>
+    	</div>
+    </div>
+    <div id="register-footer" class="noborder">
+
+			<div id="copyrights">
+				<div class="container center clearfix">
+                    上海波恩网络科技服务有限公司 版权所有.<br>客服电话:400-633-0515
+					
+                </div>
+			</div>
+
+		</div>
+
+     <script type="text/javascript">
+// Handlesmaterial design checkboxes
+     function handleMaterialDesign() {
+
+        // Material design ckeckbox and radio effects
+        $('body').on('click', '.md-checkbox > label, .md-radio > label', function() {
+            var the = $(this);
+            // find the first span which is our circle/bubble
+            var el = $(this).children('span:first-child');
+              
+            // add the bubble class (we do this so it doesnt show on page load)
+            el.addClass('inc');
+              
+            // clone it
+            var newone = el.clone(true);  
+              
+            // add the cloned version before our original
+            el.before(newone);  
+              
+            // remove the original so that it is ready to run on next click
+            $("." + el.attr("class") + ":last", the).remove();
+        }); 
+
+        if ($('body').hasClass('page-md')) { 
+            // Material design click effect
+            // credit where credit's due; http://thecodeplayer.com/walkthrough/ripple-click-effect-google-material-design       
+            $('body').on('click', 'a.btn, button.btn, input.btn, label.btn', function(e) { 
+                var element, circle, d, x, y;
+
+                element = $(this);
+      
+                if(element.find(".md-click-circle").length == 0) {
+                    element.prepend("<span class='md-click-circle'></span>");
+                }
+                    
+                circle = element.find(".md-click-circle");
+                circle.removeClass("md-click-animate");
+                
+                if(!circle.height() && !circle.width()) {
+                    d = Math.max(element.outerWidth(), element.outerHeight());
+                    circle.css({height: d, width: d});
+                }
+                
+                x = e.pageX - element.offset().left - circle.width()/2;
+                y = e.pageY - element.offset().top - circle.height()/2;
+                
+                circle.css({top: y+'px', left: x+'px'}).addClass("md-click-animate");
+            });
+        }
+
+        // Floating labels
+        var handleInput = function(el) {
+            if (el.val() != "") {
+                el.addClass('edited');
+            } else {
+                el.removeClass('edited');
+            }
+        } 
+
+        $('body').on('keydown', '.form-md-floating-label .form-control', function(e) { 
+            handleInput($(this));
+        });
+        $('body').on('blur', '.form-md-floating-label .form-control', function(e) { 
+            handleInput($(this));
+        });       
+       /* $('body').on('click','#show-text',function(e){
+                $('#modal-text').modal();
+                });*/
+    }
+handleMaterialDesign();
+    </script>
+<div class="modal fade bs-modal-lg" id="modal-text" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title">服务条款</h4>
+										</div>
+										<div class="modal-body">
+波恩软件用户许可协议
+
+
+请仔细阅读以下使用许可， 如果您不同意以下任何一点， 请立即停止使用此软件。
+
+波恩将本软件程序的最终使用许可权授予您。但您必须向波恩作出以下保证：
+
+本《用户许可协议》(以下简称《协议》)是您(个人或单一机构团体)与上述 波恩 软件(以下称"软件"或"软件产品")版权所有人波恩之间的法律协议。在您使用本软件产品之前，请务必阅读此《协议》， 任何与《协议》有关的软件、电子文档等都应是按本协议的条款而授予您的， 同时本《协议》亦适用于任何有关本软件产品的后期发行和升级。您一旦安装、复制、下载、访问或以其它方式使用本软件产品， 即表示您同意接受本《协议》各项条款的约束。如您不同意本《协议》的条款， 那么， 版权所有人波恩 则不予将本软件产品的使用权授予您。在这种情况下， 您不得使用、复制或传播本软件产品。
+
+本软件产品受著作权法及国际著作权条约和其它知识产权法及条约的保护。本软件产品只许可使用， 而不出售。不得用于商业目的的活动之中。
+
+一、软件产品保护条款
+
+1.许可证的授予：本《协议》授予您下列权利
+安装和使用：
+您可安装无限制数量的本软件产品来使用。 
+
+复制、分发和传播：
+您可以复制、分发和传播无限制数量的软件产品， 但您必须保证每一份复制、分发和传播都必须是完整和真实的， 包括所有有关本软件产品的软件、电子文档， 版权和商标宣言， 亦包括本协议。 
+本软件可以独立分发亦可随同其他软件一起分发， 但如因此而引起任何问题， 版权人将不予承担任何责任。
+
+2.其它权利和限制说明
+禁止反向工程、反向编译和反向汇编： 
+您不得对本软件产品进行反向工程、反向编译和反向汇编， 同时不得改动编译在程序文件内部的任何资源。除非适用法律明文允许上述活动， 否则您必须遵守此协议限制。
+
+终止：
+如您未遵守本《协议》的各项条件， 在不损害其它权利的情况下， 版权人可将本《协议》终止，并保留通过法律手段追究责任的权力。如发生此种情况， 则您必须销毁"软件产品"及其各部分的所有副本。
+
+商标： 
+本《协议》不授予您由版权人波恩 所拥有的任何商标或服务商标有关的任何权利。
+
+个别授权：
+如有任何组织或个人利用本软件以任何方式为公众服务并同时满足其自身特定目的而分发、复制和传播本软件产品， 均须得到版权人授权同意后方可进行， 否则视为侵权。
+
+3.版权
+本软件产品、随附的印刷材料、及本软件产品的任何副本的一切所有权和知识产权， 均由版权人波恩 拥有。通过使用本"软件产品"可访问的内容的一切所有权和知识产权均属于各自内容的所有者拥有并可能受适用著作权或其它知识产权法律和条约的保护。本《协议》不授予您使用这些内容的权利。
+
+4.有限保证
+波恩 不保证：
+使用本软件产品涉及到Internet服务，可能会受到各个环节不稳定因素的影响，因此服务存在不可抗力、计算机病毒、黑客攻击、系统不稳定、用户所在位置、用户关机、及其他任何技术、互联网络、通信线路原因等造成的服务中断或不能满足用户要求的风险。用户须承担以上风险，使用本软件产品由用户自己承担风险，在适用法律允许的最大范围内， 波恩 在任何情况下不就因使用或者不能使用本软件产品所发生的特殊的、意外的非直接或者间接的损失承担赔偿责任，即使已实现被告知此事件发生的可能性。
+
+波恩 对使用本软件造成的以下损失不承担责任：
+在使用本软件产品存在有来自任何他人的包括威胁性、亵渎性、令人反感的、侵害个人隐私权、版权、或者非法的内容或者行为，或对他人权利的侵犯（包括知识产权）的匿名或者署名的信息的风险。用户须承担以上风险，波恩 对波恩服务不作任何类型的担保和承诺，不论是明确的或者隐含的，包括所有有关信息的真实性、适用性、适于某一特定用途、所有权和非侵权的默示担保和条件，对因此导致任何因用户不正当或非法使用服务产生的直接、间接、偶然、特殊、及后续的损害，不承担任何的责任。
+
+二、用户使用须知
+
+　　特别提醒用户，使用互联网必须遵守国家有关的政策和法律，如刑法、国家安全法、保密法、计算机信息系统安全保护条例，保护国家利益;保护国家安全。对于违法或者不当使用互联网络而引起的一切责任，由用户负全部责任和连带责任。     
+    
+1.用户应加强个人资料保护意识，以免对正常使用造成不必要的影响；
+                   
+2.盗取他人用户帐号，共享和传播非法和不良信息、文件，或利用网络通讯骚扰他人，均属于违法行为；
+
+3.用户应规范合法地使用，如骚扰、欺骗其他用户，本公司有权回收其帐号； 
+
+4.用户不得利用波恩软件进行任何违法活动，包括但不限于侵犯他人版权、商标权或其他合法权益的任何行为；如有发现，波恩 会应相关部门或个人的合法要求，全力协助调查工作。
+
+5、如用户使用波恩软件服务，即表示用户愿意接受波恩 波恩软件服务发出的相关群发邮件。此群发邮件的解释权归波恩 所有。
+
+三、法律适用
+本协议条款应符合中华人民共和国法律法规的规定，用户和波恩 一致同意接受中华人民共和国法律的管辖。当本协议条款与中华人民共和国法律相抵触时，则这些条款将完全按法律规定重新解释或重新修订，而其它条款则依旧对波恩 及用户产生法律效力。
+
+四、协议条款和资费标准的修改
+波恩 有权在必要时修改本协议条款的内容和服务资费标准，且该修改以符合国家法律法规的规定，并不侵害用户的合法权益为必要前提。
+
+五、协议生效
+用户选择同意协议进行安装，则本协议即时生效。
+
+六、波恩 拥有对以上各项条款和内容的最终解释权。
+                                            
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn default" data-dismiss="modal">关闭</button>
+										</div>
+									</div>
+									<!-- /.modal-content -->
+								</div>
+								<!-- /.modal-dialog -->
+							</div>
+
+ </body>
+</html>

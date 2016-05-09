@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  'PAD电子菜单'
+</script>
+<div class="main">
+    <div class="main-bg padmenu-top-bg">
+        <div class="site-head-main-center">
+            <div class="site-head-second-erp">PAD电子菜单</div>
+            <div class="site-head-fourth">通过iPAD将品牌文化、产品项目、技师介绍、服务环境等信息完美的展</div>
+            <div class="site-head-fourth">示给消费者，为商家提供了一个品牌展示+销售点单的新平台！</div>
+        </div>
+    </div>
+
+<!--单页导航   add by 刘浩-->
+    <div id="s1" class="mian-onepage-nav all-hidden two-hidden" >
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">产品特色</a>
+            <a class="btn btn-inside-nav " href="#s2">使用场景</a>
+            <a class="btn btn-inside-nav " href="#s3">五大功能</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="mian-onepage-nav onepage-nav-fix" id="onepage-nav-fix">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">产品特色</a>
+            <a class="btn btn-inside-nav " href="#s2">使用场景</a>
+            <a class="btn btn-inside-nav " href="#s3">五大功能</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+<!--end-->
+    <div class="text-center one-hidden two-hidden" style="padding-top:20px">
+        <div style="width: 192px;background-color: #FFFFFF; text-align: center;margin-right:auto;margin-left:auto;padding-top:20px">
+            <!--width: 100px;-->
+            <div style="height: 100px; text-align: center;">
+                <img src="static/src/img/padmenu/3-1.png" style="width:100px">
+            </div>
+            <div class="hardware-second-title" style=" color: #404040;">
+                完美展示
+            </div>
+            <div class="hardware-font-content">
+                企业文化、环境、技师、以及每一款产品均有图片、与文字介绍，内容详尽且时尚简约。
+            </div>
+        </div>
+        <div style="width: 192px;background-color: #FFFFFF; text-align: center;margin-right:auto;margin-left:auto;padding-top:20px">
+            <!--width: 100px;-->
+            <div style="height: 100px; text-align: center;">
+                <img src="static/src/img/padmenu/3-2.png" style="width:100px">
+            </div>
+            <div class="hardware-second-title" style=" color: #404040;">
+                同步更新
+            </div>
+            <div class="hardware-font-content">
+                后台更改产品内容会自动同步到PAD中，只要PAD是登录状态，就可以自动更新。
+            </div>
+        </div>
+        <div style="width: 192px;background-color: #FFFFFF; text-align: center;margin-right:auto;margin-left:auto;padding-top:20px">
+            <!--width: 100px;-->
+            <div style="height: 100px; text-align: center;">
+                <img src="static/src/img/padmenu/3-3.png" style="width:100px">
+            </div>
+            <div class="hardware-second-title" style=" color: #404040;">
+                订单生成
+            </div>
+            <div class="hardware-font-content">
+                消费者在PAD上进行下单，生成的订单可以传到前台POS收银端，最终完成订单过程。
+            </div>
+        </div>
+    </div>
+            <div class="site-padding-grid-3  all-hidden">
+                 <table align="center">
+                     <tbody style="color:#999999">
+                         <tr>
+                             <td style="width: 192px;vertical-align: top;">
+                                 <div style="width: 192px;background-color: #FFFFFF; text-align: center;">
+                                     <!--width: 100px;-->
+                                     <div style="height: 100px; text-align: center;">
+                                         <img src="static/src/img/padmenu/3-1.png" style="width:100px">
+                                     </div>
+                                     <div class="hardware-second-title" style=" color: #404040;">
+                                         完美展示
+                                     </div>
+                                     <div class="hardware-font-content">
+                                         企业文化、环境、技师、以及每一款产品均有图片、与文字介绍，内容详尽且时尚简约。
+                                     </div>
+                                 </div>
+                             </td>
+                             <td style="width: 192px;vertical-align: top; padding-left: 70px;">
+                                 <div style="width: 192px;background-color: #FFFFFF; text-align: center;">
+                                     <!--width: 100px;-->
+                                     <div style="height: 100px; text-align: center;">
+                                         <img src="static/src/img/padmenu/3-2.png" style="width:100px">
+                                     </div>
+                                     <div class="hardware-second-title" style=" color: #404040;">
+                                         同步更新
+                                     </div>
+                                     <div class="hardware-font-content">
+                                         后台更改产品内容会自动同步到PAD中，只要PAD是登录状态，就可以自动更新。
+                                     </div>
+                                 </div>
+                             </td>
+                             <td style="width: 192px;vertical-align: top; padding-left: 70px;">
+                                 <div style="width: 192px;background-color: #FFFFFF; text-align: center;">
+                                     <!--width: 100px;-->
+                                     <div style="height: 100px; text-align: center;">
+                                         <img src="static/src/img/padmenu/3-3.png" style="width:100px">
+                                     </div>
+                                     <div class="hardware-second-title" style=" color: #404040;">
+                                        订单生成
+                                     </div>
+                                     <div class="hardware-font-content">
+                                         消费者在PAD上进行下单，生成的订单可以传到前台POS收银端，最终完成订单过程。
+                                     </div>
+                                 </div>
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </div>
+    <div id="s2" class="site-main-warpper" >
+        <div id="section-scene" class="site-main-warpper-title" style="margin-top:0px">应用于各种场景</div>
+        <div class="site-main-warpper-content">灵活应用于店铺、前台、展会、公关事宜、业务推广等多种模式中</div>
+
+        <div class="site-main-warpper-img">
+            <img class="site-main-warpper-img-1" src="static/src/img/padmenu/2-1.jpg">
+            <img class="site-main-warpper-img-1" src="static/src/img/padmenu/2-2.jpg">
+            <div class="site-main-warpper-img-warpper">
+                <div class="site-main-warpper-img-color">
+                    <div class="site-main-warpper-font">
+                        iPad电子菜单
+                    </div>
+                    <div class="site-main-warpper-font-2">
+                        你的贴身助理
+                    </div>
+
+                </div>
+                <img class="site-main-warpper-img-2" src="static/src/img/padmenu/2-3.jpg">
+            </div>
+
+        </div>
+        <div id="section-" class="site-main-warpper-title">从进门开始就彰显出服务品质</div>
+        <div class="site-main-warpper-content">拥有它，您不用再烦恼顾客到来时手忙脚乱；也不用再担心繁多的产品项目无从介绍。</div>
+        <div class="site-main-warpper-content">您只需一个PAD，就能让顾客享受尊贵的点单服务新体验！</div>
+        <div class="site-main-warpper-content">在电子菜单中展示产品、服务、环境等内容，让生活更简单，更有趣！</div>
+
+        <div class="site-main-warpper-img">
+            <img src="static/src/img/padmenu/123.jpg" class="padmenu-big-img">
+
+        </div>
+
+        <div id="s3" class="main-content">
+            <div class="padmenu-main-bottom-title">五大功能，为你省下更多资源</div>
+            <div class="site-main-bottom-img"><img class="padmenu-last" src="static/src/img/padmenu/3.jpg" ></div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

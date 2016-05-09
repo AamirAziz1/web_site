@@ -1,0 +1,358 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  '增值服务'
+</script>
+    <div class="main-bg server-top-bg">
+        <div class="site-about-head-wrapper">
+            <div class="server-top-content" >
+                <div class="server-top-title">
+                    优质服务，超出期待
+                </div>
+                <div class="font-title-second " style="padding-top: 36px;color: white;">
+                    专业化的技术服务体系，提升门店管理效率，
+                    <br>
+                    节省人力成本，让工作更轻松
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mian-onepage-nav all-hidden two-hidden">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">服务项目</a>
+            <a class="btn btn-inside-nav " href="#s2">定制开发</a>
+            <a class="btn btn-inside-nav " href="#s3">导师培训</a>
+            <a class="btn btn-inside-nav " href="#s4">财务内控</a>
+            <a class="btn btn-inside-nav " href="#s5">APP市场</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="mian-onepage-nav onepage-nav-fix" id="onepage-nav-fix">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">服务项目</a>
+            <a class="btn btn-inside-nav " href="#s2">定制开发</a>
+            <a class="btn btn-inside-nav " href="#s3">导师培训</a>
+            <a class="btn btn-inside-nav " href="#s4">财务内控</a>
+            <a class="btn btn-inside-nav " href="#s5">APP市场</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div id="s1" class="main-content server-first" style="color: #999999; ">
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/server/2-1.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    数据导入
+                </div>
+                <div class="hardware-font-content text-center">
+                    远程、下店、一次性数据导入等多种方式，帮您解决前期数据录入的烦恼。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/server/2-2.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    下店盘点
+                </div>
+                <div class="hardware-font-content text-center">
+                    技术人员下店对商品进行盘点及录入，帮您统计盘盈亏数据，准确地掌握库存。
+                </div>
+            </div>
+        </div>
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/server/2-3.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    在线技术支持
+                </div>
+                <div class="hardware-font-content text-center">
+                    技术人员在线为您服务，解答您在使用软硬件过程中遇到的任何疑问。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/server/2-4.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    专属顾问服务
+                </div>
+                <div class="hardware-font-content text-center">
+                    VIP会员尊享产品优先升级、问题优先解答、一对一指导等专属服务。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="s2" class="main-content server-main-content">
+        <div class="server-img-3-1">
+            <img src="static/src/img/server/3-1.jpg">
+        </div>
+        <div class="server-main-3-1">
+            <div class="font-title-b">
+                定制化功能开发
+                <br>
+                满足您个性化需求
+            </div>
+            <div class="server-content-3-1">
+                强大的技术团队可在原有模块上为您添加满足您
+                <br>
+                需求的个性化功能,不论管理或是营销，我们全
+                <br>
+                力做到一款为您专属定做的门店解决方案。
+            </div>
+        </div>
+    </div>
+    <div class="main-single-border"></div>
+    <div id="s3" class="main-content server-main-content">
+        <div class="server-img-3-2">
+            <img src="static/src/img/server/3-2.jpg" >
+        </div>
+        <div class="server-main-3-2">
+            <div class="font-title-b">
+                专业导师培训
+                <br>
+                严格考核学员
+            </div>
+            <div class="server-content-3-1" >
+                根据门店日常业务需求，为学员量身制定训培计
+                <br>
+                划，并安排课程考核旨在为您输送多技能、高
+                <br>
+                质量的优秀员工。
+            </div>
+        </div>
+    </div>
+    <div class="main-bg all-hidden" style="background-image: url('static/src/img/server/2.jpg');    height: 380px;">
+        <div style="color:white;width:430px;margin-left:auto;margin-right:auto">
+            <div class="font-title-w" style="color:white;padding-top:80px">
+                波恩服务热线
+            </div>
+            <div class="" style="font-size:60px">
+                400-633-0515
+            </div>
+            <div class="font-two" style="padding-top:0px;color:white">
+                想要获取跟多信息和帮助
+                <br>
+                请拨打我们的客服电话
+            </div>
+        </div>
+    </div>
+    <div id="s4" class="main-content server-main-content">
+        <div class="server-img-3-1">
+            <img src="static/src/img/server/3-3.jpg">
+        </div>
+        <div class="server-main-3-1">
+            <div class="font-title-b">
+                企业内控专家
+                <br>
+                财务省时省力
+            </div>
+            <div class="server-content-3-1">
+                与专业财务公司合作，指派财务专业人员负责交
+                <br>
+                接财务资料，提供复核、记账、报表、申报、装
+                <br>
+                订等一条龙服务，省去小微企业较高的财务人工
+                <br>
+                和管理成本。
+            </div>
+        </div>
+
+    </div>
+    <div class="main-single-border"></div>
+    <div class="main-content server-main-content">
+        <div class="server-img-3-2">
+            <img src="static/src/img/server/3-4.jpg" >
+        </div>
+        <div class="server-main-3-2">
+            <div class="font-title-b">
+                多元化服务
+                <br>
+                缔造店尚品质
+            </div>
+            <div class="server-content-3-1" >
+                 店尚提供多层级增值服务，任您选择，让使用软
+                <br>
+                件没有担心，只有安心！
+            </div>
+        </div>
+    </div>
+
+    <div id="s5" class="all-hidden two-hidden" style="min-width: 1016px;background-color: #FAFAFA; padding-top: 80px;">
+        <div class="text-center font-title-b">
+            APP市场
+        </div>
+        <div class="text-center" style="font-size: 18px;color: #999999;padding-top: 24px;padding-bottom: 24px;">
+            集合多功能于一身，您可以添加您想要的模块，实现个性化管理工具。
+        </div>
+        <div class="main-content" style="padding-bottom:68px">
+            <div style="height:250px;margin-bottom:12px">
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-1.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        多门店
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        实现多门店收银管理功能和跨店结算等
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;margin-left:7px;margin-right:7px;">
+                    <img src="static/src/img/server/4-2.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        采购
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        实现商品采购相关订单下达，入库，退货等功能
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-3.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        库存
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        库存商品的盘点和管理
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div style="height:250px;margin-bottom:12px">
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-4.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        财务
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        管理门店基本财务，例如日营业报表，月营业报表，进出账等
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;margin-left:7px;margin-right:7px;">
+                    <img src="static/src/img/server/4-5.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        对接接口
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        可以对接天猫，淘宝，微信，团购网站等
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-6.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        电商与微电商
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        帮助门店实现电商和微电商平台的管理
+                    </div>
+                </div>
+            </div>
+            <div style="height:250px;margin-bottom:12px">
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-7.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        预约
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        实现会员的在线预约管理，会员卡与门店管理软件预约的互通
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;margin-left:7px;margin-right:7px;">
+                    <img src="static/src/img/server/4-8.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        员工管理
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        员工档案，排班，签到，业绩提成核算管理
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-9.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        安全管理
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        管理数据安全，限制登录帐套权限
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div style="height:250px;margin-bottom:12px">
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-10.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        场地管理
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        配置消费场地，让收银与场地关联
+                        <br><br>
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;margin-left:7px;margin-right:7px;">
+                    <img src="static/src/img/server/4-11.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        会员管理
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        会员折扣卡配置，会员卡的升级，调换，挂失，激活，退卡，合并等
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-12.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        商品管理
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        商品资料的建立和管理
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div style="height:250px;margin-bottom:12px">
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-13.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        销售
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        库存商品的销售管理，包括销售订单建立，客户管理和出库管理
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;margin-left:7px;margin-right:7px;">
+                    <img src="static/src/img/server/4-14.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        报表
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        各种业务数据的统计分析
+                        <br><br>
+                    </div>
+                </div>
+                <div class="text-center pull-left" style="width:326px;border:1px solid #e2e2e2;">
+                    <img src="static/src/img/server/4-15.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        数据备份
+                    </div>
+                    <div class="" style="width:250px;margin-right:auto;margin-left:auto;font-size: 16px;color: #999999;padding-top: 20px;    padding-bottom: 24px;">
+                        所属帐套所有数据的备份管理
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="text-center bottom-regiest-part" >
+        <div class="font-title-b text-center">
+            放心交给我们，我们将提供最好的服务
+        </div>
+        <div class="font-two text-center" style="padding-top:30px;">
+            我们秉承简约至尚的理念，专注于产品优化，竭尽所能为您提供最优质的用户体验
+        </div>
+        <a class="btn btn-main-info bottom-regiest-btn" href="/site/register">注册</a>
+    </div>
+{% endblock %}

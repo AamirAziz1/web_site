@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  '营销方案'
+</script>
+<script>
+    if(window.devicePixelRatio && devicePixelRatio >= 2){
+        document.querySelectorAll('ul').className = 'hairlines'
+    }
+</script>
+    <div class="main-bg all-hidden" style="background-image: url('static/src/img/marketing/1.jpg');">
+        <div class="main-content" style="padding-top:220px">
+            <div style="background-color:rgba(255,255,255,0.5);width:480px">
+                <div class="font-title-b" style="color:black; padding-top: 20px;padding-left: 20px;">
+                    店尚营销平台
+                </div>
+                <div style="font-size:24px;color:#404040;padding-left: 20px;padding-right: 20px;padding-bottom:20px">
+                    移动互联营销时代，用微端与客户实时连接，帮助您建立起与顾客的亲密联系。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-bg two-hidden one-hidden marketing-top-bg">
+        <div class="site-head-main-center">
+            <div class="site-head-second-erp" style="color:white">店尚营销平台</div>
+            <div class="site-head-fourth" style="color:white">移动互联营销时代，用微端与客户实时连接，帮助您建立起与顾客的亲密联系。</div>
+        </div>
+    </div>
+    <div id="s1" class="mian-onepage-nav all-hidden two-hidden">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">解决方案</a>
+            <a class="btn btn-inside-nav " style="margin-left:24px" href="#s2">营销工具</a>
+            <a class="btn btn-inside-nav " style="margin-left:24px" href="#s3">营销活动</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="mian-onepage-nav onepage-nav-fix" id="onepage-nav-fix">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">解决方案</a>
+            <a class="btn btn-inside-nav " style="margin-left:24px" href="#s2">营销工具</a>
+            <a class="btn btn-inside-nav " style="margin-left:24px" href="#s3">营销活动</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="main-content marketing-s1" >
+        <div class="marketing-s1-content">
+            <div class="font-title-b" >
+                我们的解决方案
+            </div>
+            <div style="font-size:24px;padding-top:40px">
+                强大的管理系统
+            </div>
+            <div class="font-two" style="padding-top:20px">
+                优化您的管理，提高工作效率。让您有更多的时间专注于您的客户。
+            </div>
+            <div style="font-size:24px;padding-top:40px">
+                在线营销平台
+            </div>
+            <div class="font-two" style="padding-top:0px">
+                提供专业的营销平台，从此您和客户之间不再有距离。
+                专属营销导师，为您定制精准、个性化的营销方案。
+            </div>
+            <div style="font-size:24px;padding-top:30px">
+                专属线上活动
+            </div>
+            <div class="font-two" style="padding-top:0px">
+                互联网+时代下的线上活动，以低成本赢得高效率。
+                为商户带来转化的同时，更是一种有效的品牌营销方式。
+            </div>
+        </div>
+        <img src="static/src/img/marketing/2.png" class="pull-right two-hidden all-hidden" style="width: 582px;">
+    </div>
+    <div id="s2" class="main-single-border"></div>
+    <div class="main-content" style="padding-top:78px;">
+        <div class="text-center font-title-b" style="color:#404040">
+            我们的营销工具
+        </div>
+        <div class="text-center font-two" style="padding-top:10px;padding-bottom: 54px;">
+            多种营销利器，各种平台都将成为营销手段
+        </div>
+        <div class="main-content" style="padding-bottom:68px">
+            <div class="marketing-grid-3">
+                <div class="marketing-grid-3-item">
+                    <img src="static/src/img/marketing/4-1.png"  style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        收银即拓客
+                    </div>
+                    <div class="marketing-grid-3-content">
+                    客户结账后可直接通过收银一体机赠送客户礼品券，客户享受到优惠的同时更乐意将礼品券分享给自己的好友，通过收银让每一位到店的消费会员都成为你的口碑广告。
+                    </div>
+                </div>
+                <div class="marketing-grid-3-item marketing-grid-3-item-mid" >
+                    <img src="static/src/img/marketing/4-2.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        PAD电子菜单
+                    </div>
+                    <div class="marketing-grid-3-content">
+                    电子菜单并不只是时尚与个性，而是更全面的展示、更便捷的工具、更有效的沟通、更潜移默化的宣传。它所彰显的，是行业的专业。
+                        <br><br>
+                    </div>
+                </div>
+                <div class="marketing-grid-3-item" >
+                    <img src="static/src/img/marketing/4-3.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        微信平台
+                    </div>
+                    <div class="marketing-grid-3-content">
+                    通过与微信平台的对接，利用微信庞大的会员基数传播门店品牌，通过公众号扩大会员基数、运用微信优惠券在朋友圈中迅速扩散，即可零成本增加销售机会。
+                    </div>
+                </div>
+            </div>
+            <div class="marketing-grid-3">
+                <div class="marketing-grid-3-item">
+                    <img src="static/src/img/marketing/4-4.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        大众点评
+                    </div>
+                    <div class="marketing-grid-3-content">
+                    进行口碑传播是互联网最大的优势，能够有效拉动用户数量，你想尝试在大众点评上发动一场团购热潮？嘿，可以问问店尚，因为我们会告诉你可以做的或许不止这些。
+                    </div>
+                </div>
+                <div class="marketing-grid-3-item marketing-grid-3-item-mid">
+                    <img src="static/src/img/marketing/4-5.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        会员专属APP
+                    </div>
+                    <div class="marketing-grid-3-content">
+                    面对客户的流失总是让人很心痛，如何才可以了解每一位用户的需求？答案就是让会员成为你大家庭的一员。用专属APP可以轻松让会员感受到你不一样的贴心。
+                    </div>
+                </div>
+                <div class="marketing-grid-3-item">
+                    <img src="static/src/img/marketing/4-6.png" class="" style="  padding-top: 24px;  width: 78px;">
+                    <div class="font-title-second" style="padding-top: 24px;">
+                        营销活动
+                    </div>
+                    <div class="marketing-grid-3-content">
+                    利用移动互联的优势我们可以组织更多有效的营销活动，优惠券、积分、红包等营销工具组合出击，实现传统系统无法便捷实现的功能。
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="s3" class="main-single-border"></div>
+    <div class="main-content text-center one-hidden" style="padding-top:40px">
+            <div class="marketing-img-content" style="background-image: url('static/src/img/marketing/3-5.jpg');">
+                <div class="marketing-img-content-main">
+                    <div style="font-size:20px;padding-top:30px">
+                        微卡线上专业活动
+                    </div>
+                    <div style="font-size:16px;margin-top:16px">
+                        互联网+时代下的线上营销、及其高效率、低成本成为主流营销渠道，线上营销不仅可以品牌宣传，微卡组织的主题活动也会持续为商户带来一些转化。
+                    </div>
+                </div>
+            </div>
+        <div class="font-title-b">
+            我们的营销活动
+        </div>
+        <div class="font-two" style="padding-top:10px">
+            活动种类：在线礼品卡、老客户维护活动、线上活动、传统线下活动、微信摇一摇、单店联盟、异业联盟、万店团购等等等等。
+        </div>
+            <div class="marketing-img-content2" style="background-image:url('static/src/img/marketing/3-2.jpg');">
+                <div class="text-center marketing-img-content2-main">
+                    微卡异业联盟
+                </div>
+            </div>
+        <div class="font-title-second" style="padding-top:24px;color:#404040">
+            专业营销导师
+        </div>
+        <div class="font-two" style="padding-top:10px;padding-bottom:20px">
+            凭借我们多年的经验，店尚致力于为您提供更多更丰富的营销方案。我们的资深导师都是拥有多家企业创始及成功运作经验，对生活服务类商户业务及经营有丰富经验。
+        </div>
+        <div class="marketing-img-content3" style="background-image:url('static/src/img/marketing/3-1.jpg');">
+            <div class="marketing-img-content3-main">
+                摇一摇专业主题活动
+            </div>
+        </div>
+    </div>
+    <div class="main-content two-hidden all-hidden" style="margin-top:76px;margin-bottom: 100px;">
+            <div style="height:548px">
+                <div class="pull-left" style="background-image:url('static/src/img/marketing/3-1.jpg');height:548px;width: 440px;background-size: cover;">
+                    <div class="text-center" style="font-size:20px;color:white;background-color:rgba(0,0,0,0.7);height:48px;width: 440px;line-height:48px;margin-top:500px">
+                        摇一摇专业主题活动
+                    </div>
+                </div>
+                <div class="pull-left" style="margin-left: 10px;">
+                    <div class="" style="background-image:url('static/src/img/marketing/3-2.jpg');background-size: cover;height:346px;width: 535px;">
+                        <div class="text-center" style="position:absolute;font-size:20px;color:white;background-color:rgba(0,0,0,0.7);height:48px;width: 535px;line-height:48px;margin-top:298px">
+                            微卡异业联盟
+                        </div>
+                    </div>
+                    <div style="margin-top:30px;">
+                        <div class="pull-left" style="background-image:url('static/src/img/marketing/3-3.jpg');background-size: cover;height:172px;width:259px">
+                            <div class="text-center" style="font-size:20px;color:white;background-color:rgba(0,0,0,0.7);height:48px;width:259px;line-height:48px;margin-top:124px">
+                                线下定制活动
+                            </div>
+                        </div>
+                        <div class="pull-left" style="margin-left:24px;background-image:url('static/src/img/marketing/3-4.jpg');background-size: cover;height:172px;width:259px">
+                            <div class="text-center" style="font-size:20px;color:white;background-color:rgba(0,0,0,0.7);height:48px;width:259px;line-height:48px;margin-top:124px">
+                                单店联盟
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:10px;height:270px;">
+                <div class="pull-left" style="background-image: url('static/src/img/marketing/3-5.jpg');background-size: cover;width: 440px;">
+                    <div class="" style="color:white;background-color:rgba(0,0,0,0.5);height:270px;padding-left:20px;padding-right:20px;">
+                        <div style="font-size:20px;padding-top:30px">
+                            微卡线上专业活动
+                        </div>
+                        <div style="font-size:16px;margin-top:16px">
+                            互联网+时代下的线上营销、及其高效率、低成本成为主流营销渠道，线上营销不仅可以品牌宣传，微卡组织的主题活动也会持续为商户带来一些转化。
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-left" style="margin-left: 10px;width:542px">
+                    <div style="font-size:48px;color:#404040">
+                        我们的营销活动
+                    </div>
+                    <div class="font-two" style="padding-top:10px">
+                        活动种类：在线礼品卡、老客户维护活动、线上活动、传统线下活动、微信摇一摇、单店联盟、异业联盟、万店团购等等等等。
+                    </div>
+                    <div style="font-size:24px;padding-top:24px;color:#404040">
+                        专业营销导师
+                    </div>
+                    <div class="font-two" style="padding-top:10px">
+                        凭借我们多年的经验，店尚致力于为您提供更多更丰富的营销方案。我们的资深导师都是拥有多家企业创始及成功运作经验，对生活服务类商户业务及经营有丰富经验。
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+{% endblock %}

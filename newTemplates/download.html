@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  '下载'
+</script>
+    <div class="two-hidden all-hidden">
+
+        <!--头部图片-->
+    <div class="main-bg text-center" style="background-image: url('static/src/img/download/1.jpg');color:white ">
+        <div class="font-title-w support-top">
+            下载
+        </div>
+        <div class="font-title-second">
+            一整套软硬件来帮助您取得更大的成功
+        </div>
+    </div>
+        <!--头部选项-->
+    <div class="mian-onepage-nav all-hidden two-hidden">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">店尚</a>
+            <a class="btn btn-inside-nav " href="#s2">微卡</a>
+            <a class="btn btn-inside-nav " href="#s3">IPad</a>
+            <a class="btn btn-inside-nav " href="#s4">联系我们</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="mian-onepage-nav onepage-nav-fix" id="onepage-nav-fix">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">店尚</a>
+            <a class="btn btn-inside-nav " href="#s2">微卡</a>
+            <a class="btn btn-inside-nav " href="#s3">IPad</a>
+            <a class="btn btn-inside-nav " href="#s4">联系我们</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+
+    <div id="s1" class="main-content" style="padding-top:80px;height:700px">
+        <div class="pos-fenge" >
+            <div class="text-center pos-fenge-img" >
+                <img src="static/src/img/download/logo1.png" style="width:100px">
+            </div>
+            <div class="download-line-left"></div>
+            <div class="download-line-right"></div>
+        </div>
+        <div class="font-title-b text-center" >
+            店尚——您的门店系统专家
+        </div>
+        <div class="pull-left">
+            <img src="static/src/img/download/1-1.png">
+        </div>
+        <div class="pull-right" style="padding-top: 66px;margin-right:100px">
+            <a class="btn btn-download-info" href="{{dianshang_windows[0].url}}"><img src="static/src/img/download/bt-windows.png" class="img-in-download-btn">下载Windows版</a><br><br>
+            <a class="btn btn-download-info text-left" href="{{dianshang_ipad[0].url}}"><img src="static/src/img/download/bt-iPad.png" class="pull-left img-in-download-btn">下载iPad版</a><br><br>
+            <a class="btn btn-download-info" href="{{dianshang_iphone[0].url}}"><img src="static/src/img/download/bt-iPhone.png" class="img-in-download-btn">下载iPhone版</a><br><br>
+            <a class="btn btn-download-info" href="{{dianshang_android[0].url}}"><img src="static/src/img/download/bt-android.png" class="img-in-download-btn">下载Android版</a>
+        </div>
+    </div>
+
+    <div id="s2" class="main-content" style="padding-top:80px;height:700px">
+        <div class="pos-fenge" >
+            <div class="text-center pos-fenge-img" >
+                <img src="static/src/img/download/logo2.png" style="width:100px">
+            </div>
+            <div class="download-line-left"></div>
+            <div class="download-line-right"></div>
+        </div>
+        <div class="font-title-b text-center">
+            微卡——门店专属会员APP
+        </div>
+        <div class="pull-right">
+            <img src="static/src/img/download/1-2.png">
+        </div>
+        <div class="pull-left" style="padding-top: 118px;margin-left:100px">
+            <a class="btn btn-download-info" href="{{weika_iphone[0].url}}"><img src="static/src/img/download/bt-iPhone.png" class="img-in-download-btn">下载iPhone版</a><br><br>
+            <a class="btn btn-download-info" href="{{weika_android[0].url}}"><img src="static/src/img/download/bt-android.png" class="img-in-download-btn">下载Android版</a>
+        </div>
+    </div>
+
+    <div id="s3" class="main-content" style="padding-top:80px;height:800px">
+        <div class="pos-fenge" >
+            <div class="text-center pos-fenge-img" >
+                <img src="static/src/img/download/logo3.png" style="width:100px">
+            </div>
+            <div class="download-line-left"></div>
+            <div class="download-line-right"></div>
+        </div>
+        <div class="font-title-b text-center">
+            电子菜单——点单服务新体验
+        </div>
+        <div class="text-center">
+            <img src="static/src/img/download/1-3.png">
+        </div>
+        <div class="text-center">
+            <a class="btn btn-download-info" href="{{padmenu_ipad[0].url}}"><img src="static/src/img/download/bt-iPad.png" style="margin-left: 40px;" class="img-in-download-btn">下载iPad版</a><br><br>
+        </div>
+    </div>
+    <div class="text-center" style="width:100%;min-width:1016px;margin-top: 60px;">
+        <img src="static/src/img/download/version1.png">
+        <img src="static/src/img/download/version_bottom.png" style="width: inherit;">
+    </div>
+    <div id="s4" style="background-color:#f7f7f7;height:40px">
+    </div>
+
+        <!--联系-->
+        <div class="downloadContactBg"  style="background-image: url(static/src/img/download/contact_bg.jpg); background-repeat: no-repeat; height: 306px;">
+            <div class="main-content" style="padding:71px 0;">
+                <div style=" font-size: 48px;color: #FFFFFF; text-align: center;">
+                    <b>联系</b>
+                </div>
+                <div style="font-size: 18px; color: #FFFFFF;padding-top: 40px;">
+                    需要帮助或有未回答的问题FAQ或帮助上述部分的问题，请随时给我们发电子邮件。我们会竭尽全力，尽快给您
+                    回复。安装上有什么问题都可以拨打我们的客户热线：400-633-0515.我们会第一时间为您解答。
+                </div>
+            </div>
+        </div>
+
+        <!--免费开通-->
+        <div style="background-color: #FFFFFF;">
+            <div  class="downloadPageMain" style="padding: 100px 0; text-align: center;">
+                <div  id="downloadFree" style="font-size: 48px;color: #404040;">
+                    放心交给我们，我们将提供最好的服务
+                </div>
+                <div style="font-size: 18px; color: #999999;margin-top: 30px;">
+                    我们秉承简约至尚的理念，专注于产品优化，竭尽所能为您提供最优质的用户体验
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="one-hidden">
+
+        <!--头部图片-->
+    <div class="main-bg text-center all-hidden" style="background-image: url('static/src/img/download/1.jpg');color:white ">
+        <div class="font-title-w support-top">
+            下载
+        </div>
+        <div class="font-title-second">
+            一整套软硬件来帮助您取得更大的成功
+        </div>
+    </div>
+    <div class="main-content download-dianshang">
+        <div class="pos-fenge" >
+            <div class="text-center pos-fenge-img" >
+                <img src="static/src/img/download/logo1.png" class="download-logo">
+            </div>
+            <div class="download-line-left"></div>
+            <div class="download-line-right"></div>
+        </div>
+        <div class="font-title-b text-center" >
+            店尚——您的门店系统专家
+        </div>
+        <div class="text-center">
+            <img src="static/src/img/download/1-1.png" class="download-img">
+        </div>
+        <div class="text-center" style="">
+            <a class="btn btn-download-info" href="{{dianshang_windows[0].url}}"><img src="static/src/img/download/bt-windows.png" class="img-in-download-btn">下载Windows版</a><br><br>
+            <a class="btn btn-download-info" href="{{dianshang_ipad[0].url}}"><img src="static/src/img/download/bt-iPad.png" class=" img-in-download-btn">下载iPad版</a><br><br>
+            <a class="btn btn-download-info" href="{{dianshang_iphone[0].url}}"><img src="static/src/img/download/bt-iPhone.png" class="img-in-download-btn">下载iPhone版</a><br><br>
+            <a class="btn btn-download-info" href="{{dianshang_android[0].url}}"><img src="static/src/img/download/bt-android.png" class="img-in-download-btn">下载Android版</a>
+        </div>
+    </div>
+
+    <div class="main-content download-weika" >
+        <div class="pos-fenge" >
+            <div class="text-center pos-fenge-img" >
+                <img src="static/src/img/download/logo2.png" class="download-logo">
+            </div>
+            <div class="download-line-left"></div>
+            <div class="download-line-right"></div>
+        </div>
+        <div class="font-title-b text-center">
+            微卡——门店专属会员APP
+        </div>
+        <div class="text-center">
+            <img src="static/src/img/download/1-2.png"  class="download-img">
+        </div>
+        <div class="text-center">
+            <a class="btn btn-download-info" href="{{weika_iphone[0].url}}"><img src="static/src/img/download/bt-iPhone.png" class="img-in-download-btn">下载iPhone版</a><br><br>
+            <a class="btn btn-download-info" href="{{weika_android[0].url}}"><img src="static/src/img/download/bt-android.png" class="img-in-download-btn">下载Android版</a>
+        </div>
+    </div>
+
+    <div class="main-content download-padmenu" >
+        <div class="pos-fenge" >
+            <div class="text-center pos-fenge-img" >
+                <img src="static/src/img/download/logo3.png" class="download-logo">
+            </div>
+            <div class="download-line-left"></div>
+            <div class="download-line-right"></div>
+        </div>
+        <div class="font-title-b text-center">
+            电子菜单——点单服务新体验
+        </div>
+        <div class="text-center">
+            <img src="static/src/img/download/1-3.png" class="download-img">
+        </div>
+        <div class="text-center">
+            <a class="btn btn-download-info" href="{{padmenu_ipad[0].url}}"><img src="static/src/img/download/bt-iPad.png" style="margin-left: 40px;" class="img-in-download-btn">下载iPad版</a><br><br>
+        </div>
+    </div>
+    <div class="text-center download-version-img" >
+        <img src="static/src/img/download/version1.png">
+        <img src="static/src/img/download/version_bottom.png" style="width: inherit;">
+    </div>
+    <div style="background-color:#f7f7f7;height:40px">
+    </div>
+
+        <!--联系-->
+        <div class="downloadContactBg all-hidden"  style="background-image: url(static/src/img/download/contact_bg.jpg); background-repeat: no-repeat; height: 306px;">
+            <div class="main-content" style="padding:71px 0;">
+                <div style=" font-size: 48px;color: #FFFFFF; text-align: center;">
+                    <b>联系</b>
+                </div>
+                <div style="font-size: 18px; color: #FFFFFF;padding-top: 40px;">
+                    需要帮助或有未回答的问题FAQ或帮助上述部分的问题，请随时给我们发电子邮件。我们会竭尽全力，尽快给您
+                    回复。安装上有什么问题都可以拨打我们的客户热线：400-633-0515.我们会第一时间为您解答。
+                </div>
+            </div>
+        </div>
+
+        <!--免费开通-->
+        <div style="background-color: #FFFFFF;">
+            <div class="text-center bottom-regiest-part">
+                <div class="font-title-b text-center">
+                    放心交给我们，我们将提供最好的服务
+                </div>
+                <div class="font-two text-center" style="padding-30px">
+                    我们秉承简约至尚的理念，专注于产品优化，竭尽所能为您提供最优质的用户体验
+                </div>
+                <a class="btn btn-main-info bottom-regiest-btn" href="/site/register">注册</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

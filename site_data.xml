@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="0">
+        <record id="company_signup_email" model="mail.template">
+            <field name="name">账户激活</field>
+            <field name="model_id" ref="base.model_res_company"/>
+            <field name="email_from">${(object.create_uid.email or object.create_uid.company_id.email or 'weerp@we-erp.com')|safe}</field>
+            <field name="email_to">${object.email|safe}</field>
+            <field name="subject">账户激活</field>
+            <field name="body_html">
+	            <![CDATA[
+					<div>你好 ${object.contact_name},</div>
+					<br>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;您的公司已经注册完成，请点击下面的链接地址激活帐号。</div>
+					<div>http://www.we-erp.com/site/account_active?email=${object.email}&key=${object.email_active_key}</div>
+					<br>
+					<table>	
+						<tr>
+                        	<td style=" text-align: left">
+	                        	<p style="margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;">
+	                            1. 为确保我们的信息不被当做垃圾邮件处理，请把店尚 <a style="color: #0066cc; text-decoration: none;" target="_blank"
+	                                                           href="mailto:weerp@we-erp.com">weerp@we-erp.com</a>添加为您的联系人！
+	                        	</p>
+	                            <p style="margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;">
+	                                2.您之所以收到这封邮件，是因为您曾经注册成为店尚的用户。我们保证仅向您发送关店尚相关服务的电子邮件。店尚尊重并保护您的隐私。
+	                            </p>
+	                            <p style="margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;">
+	                                3.任何问题欢迎您致电或邮件联系店尚客服中心：<span  onclick="return false;"  data="400-633-0515">400-633-0515</span>。如有问题也请访问
+	                                <a style="color: #0066cc; text-decoration: none;"  href="http://www.we-erp.com"  target="_blank">帮助中心</a>.
+	                            </p>
+                            </td>
+                    	</tr>
+  					</table>
+				]]>
+			</field>
+        </record>
+
+        <record id="company_signup_notice_email" model="mail.template">
+            <field name="name">新公司注册</field>
+            <field name="model_id" ref="base.model_res_company"/>
+            <field name="email_from">${(object.create_uid.email or object.create_uid.company_id.email or 'weerp@we-erp.com')|safe}</field>
+            <field name="subject">新公司注册通知</field>
+            <field name="email_to">weerp@we-erp.com</field>
+            <field name="body_html">
+	            <![CDATA[
+	            	<div>你好 系统管理员，</div>
+	            	<div>&nbsp;&nbsp;&nbsp;&nbsp; ${object.name}在官网注册了店尚，请尽快处理。</div>
+	            	<div>联系人：${object.contact_name}。</div>
+				]]>
+			</field>
+        </record>
+        
+        <record id="company_signup_success_email" model="mail.template">
+            <field name="name">公司创建成功通知</field>
+            <field name="model_id" ref="base.model_res_company"/>
+            <field name="email_from">${(object.create_uid.email or object.create_uid.company_id.email or 'weerp@we-erp.com')|safe}</field>
+            <field name="subject">公司审核成功通知</field>
+            <field name="email_to">${object.email|safe}</field>
+            <field name="body_html">
+	            <![CDATA[
+	            	<table cellpadding="0" cellspacing="0"
+                       style="width: 650px; margin: 0px auto; border: 1px solid #E6E6E6; border-collapse: collapse;">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <table>
+                                <tbody>
+                                <tr style="height: 75px;">
+                                    <td style="width: 20px"></td>
+                                    <td style="width: 200px"><a
+                                            href="#"
+                                            target="_blank"><img target="_blank" src="http://www.wevip.com/images/wevip/weerp_logo.png" border="0"></a></td>
+                
+                                    <td style="width: 400px">
+                                        <table cellspacing="0" cellpadding="0" style="text-align: right; width: 100%%">
+                                            <tbody>
+                
+                                            <tr>
+                                                <td height="5" colspan="4"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><a
+                                                        style="padding: 0 5px; font-size: 18px; color: #666666; text-decoration: none;"
+                                                        target="_blank"
+                                                        href="http://www.wevip.com">店尚官网</a><span
+                                                        style="color: #999999; font-size: 12px;">|</span><a
+                                                        style="padding: 0 5px; font-size: 18px; color: #666666; text-decoration: none;"
+                                                        target="_blank"
+                                                        href="http://www.we-erp.com">拓客官网</a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="width: 20px"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="18"></td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0" style="text-align: left">
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                	<p><strong style="color: #333; font-size: 14px"></strong></p>
+                                                    <p><strong style="color: #333; font-size: 14px">亲爱的 ${object.email}:</strong></p>
+                                                    <p style="line-height: 21px; font-size: 12px;">您好!欢迎入驻[店尚系统]，请妥善保管您的账户信息：<br>
+									                                                       登录帐号：${object.phone} <br>
+									                                                        密码：${object.password} <br>
+									                                                        激活码：<strong  style="color: #CC0000">${object.code}</strong> <br>
+                                                       <strong>请您注意：激活收银客户端时需要使用该激活码，如果您没有提交注册申请，请立即忽略并删除这封邮件。</strong>
+                                                    </p>
+                                                  	<p style="margin-bottom:5px;margin-bottom:5px;line-height:1.3em;font-size:12px;">此为系统邮件，请勿回复</p>
+                                                 </td>
+                                            </tr>
+                                            <tr>
+	                                            <td style="text-align: left;margin-top:30px;">
+	                                            	<p style="margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;">
+	                            					1. 为确保我们的信息不被当做垃圾邮件处理，请把店尚 <a style="color: #0066cc; text-decoration: none;" target="_blank"
+	                                                           href="mailto:weerp@we-erp.com">weerp@we-erp.com</a>添加为您的联系人！
+	                        						</p>
+	                
+	                            					<p style="margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;">
+	                                				2.您之所以收到这封邮件，是因为您曾经注册成为店尚的用户。我们保证仅向您发送关于店尚相关服务的电子邮件。店尚尊重并保护您的隐私。
+	                                				</p>
+	                            					<p style="margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;">
+	                                				3.任何问题欢迎您致电或邮件联系店尚客服中心：<span style="border-bottom:1px dashed #ccc;z-index:1"
+	                                                                                        t="6" onclick="return false;" data="400-633-0515">400-633-0515</span>。如有问题也请访问
+	                                				<a style="color: #0066cc; text-decoration: none;" href="http://www.we-erp.com" target="_blank">帮助中心</a>。 
+	                                				</p>
+	                                			</td>
+                                			</tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+				]]>
+			</field>
+        </record>
+    </data>
+</openerp>

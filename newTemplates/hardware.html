@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+{% block content %}
+    <script>
+$(function(){
+  var aImg = $('#show img');//抓取id=show下所有的图片
+  var nTime = 0;//初始化轮播图片的开始图片为第一张
+  function show(){
+    $.each(aImg,function() {
+      $(this).fadeOut('slow');//淡出，可选项
+      $(this).addClass('hidden');//设置display为hidden
+    });
+    $(aImg[nTime]).removeClass('hidden');//拿掉display=hidden
+    $(aImg[nTime]).fadeIn('slow');//淡入，可选项，如果删除的话fadeOut也要一并删除
+    nTime == aImg.length-1?nTime=0:nTime++;//三目运算符，如果轮播完毕则跳转回第一张
+  }
+  show();//让它先进行一次播放，显示第一张图片
+  $(document).ready( function() {
+    setInterval(show,5000);//设置定时器
+  });
+});
+    </script>
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  '智能硬件-一体机'
+</script>
+    <div class="main-bg hardware-top-bg">
+        <div class="font-title-b hardware-top-title">
+            店尚-颠覆传统
+            <br>
+            开启门店智能时代
+        </div>
+    </div>
+    <div class="mian-onepage-nav all-hidden two-hidden">
+        <div class="main-content single-page-nav" >
+            <a class="btn btn-inside-nav " href="#s1">店尚一体机</a>
+            <a class="btn btn-inside-nav " href="#s3">配件</a>
+            <!--<a class="btn btn-inside-nav " href="#s4">规格</a>-->
+            <a class="btn btn-inside-nav " href="#s2">价格</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="mian-onepage-nav onepage-nav-fix" id="onepage-nav-fix">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">店尚一体机</a>
+            <a class="btn btn-inside-nav " href="#s3">配件</a>
+            <!--<a class="btn btn-inside-nav " href="#s4">规格</a>-->
+            <a class="btn btn-inside-nav " href="#s2">价格</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div id="s1" class="hardware-first">
+        <div class="main-content">
+            <div class=" hardware-turn-img" id="show">
+                <img src="static/src/img/hardware/hardware1.png" >
+                <img src="static/src/img/hardware/hardware3.png" >
+                <img src="static/src/img/hardware/hardware2.png" >
+            </div>
+            <!--<img class="pull-right" src="static/src/img/hardware/hardware1.png" style="height:450px;">-->
+            <div class="hardware-first-content">
+                <div class="font-title-w">
+                    曲径通幽 美至极致
+                </div>
+                <div class="hardware-font-content" >
+                    曲线与直线的完美结合，将简约做到极致
+                    <br>
+                    只为给用户提供最好的用户体验。
+                </div>
+                <div class="hardware-second-title">
+                    包罗万象 恬静释然
+                </div>
+                <div  class="hardware-font-content" style="color: #cdcdcd">
+                    内置银联认证支付方式
+                    <br>
+                    支持磁条卡和IC卡支付等功能模块做你的坚强后盾。
+
+                </div>
+                <div class="hardware-second-title">
+                    一如既往 不忘初心
+                </div>
+                <div  class="hardware-font-content" style="color: #cdcdcd">
+                    180°可旋转式收银，将门店与会员的心拉近，再拉近一点...
+                </div>
+            </div>
+            <!--<img src="static/src/img/hardware/2.png" class="pull-right" style="right:0;position: absolute;top: 830px;">-->
+        </div>
+    </div>
+    <div class="main-content hardware-second"  style="color:#999999">
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/hardware/3-1.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    时尚简洁
+                </div>
+                <div class="hardware-font-content text-center">
+                    去掉多余的设备和连接，收银台可以是门店品质的另一种体现
+                </div>
+            </div>
+            <div class="grid-4" >
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/hardware/3-2.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    交易安全
+                </div>
+                <div class="hardware-font-content text-center">
+                    加密每一笔交易信息、会员信息再进行交互，保证数据安全。
+                </div>
+            </div>
+        </div>
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/hardware/3-3.png">
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    化繁为简
+                </div>
+                <div class="hardware-font-content text-center">
+                 在手指间轻松解决繁琐的原始工作，同时自动将数据备份云端
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/hardware/3-4.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    数据管理
+                </div>
+                <div class="hardware-font-content text-center">
+                   数据实时交互，可以通过PC端、移动端等及时查看门店经营数据
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-single-border"></div>
+
+        <div class="main-content hardware-third">
+            <img class="hardware-left-img" src="static/src/img/hardware/pay.png">
+            <div class="hardware-right-content">
+                <div class="font-title-b">
+                   满足全渠道支付方式
+                </div>
+                <div class="hardware-font-content">
+                    银联认证－支持磁条卡、IC卡的支付功能支持
+                    <br>支付宝、微信等多种形式的扫码支付
+
+                </div>
+                <div class="hardware-second-title" style="color:black">
+                    可升级Apple-Pay
+                </div>
+                <div class="hardware-font-content">
+                    内置NFC，进一步拓展支付方式
+                    <br>
+                    掏出手机，指纹一点，轻松支付
+                </div>
+            </div>
+            <!--<img src="static/src/img/hardware/4.png" class="pull-left" style="width:522px">-->
+        </div>
+
+    <div class="main-single-border"></div>
+        <div class="main-content hardware-third" style="color:#999999">
+            <img class="hardware-right-img" src="static/src/img/hardware/Padpay.png" >
+            <div class="hardware-left-content">
+                <div class="font-title-b">
+                    店尚智能收银APP
+                </div>
+                <div class="hardware-font-content">
+                    •	内置iBeacon设备，实现微信摇一摇定位营销，收银即
+                    <br>
+                    &nbsp;&nbsp;营销，朋友圈分享营销，微卡商城营销
+                </div>
+
+                <div class="hardware-font-content">
+                    •	数据实时交互，经营数据多终端轻松查询
+                </div>
+                <div class="hardware-font-content">
+                    •	多账号权限设置，保障门店数据安全
+                </div>
+                <div class="hardware-font-content">
+                    •	多终端支持，实现门店移动化管理
+                </div>
+                <div class="hardware-font-content">
+                    •	支持银行卡、支付宝、微信支付、会员卡、礼品卡、优
+                    <br>
+                    &nbsp;&nbsp;惠券多种支付方式
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-single-border"></div>
+    <div id="s3" class="main-content hardware-fourth">
+        <div class="text-center font-title-b">
+            智能配件
+        </div>
+        <div class="text-center hardware-font-content">
+            我们还给店尚配备了其它智能配件
+            <br>
+            只需要通过usb连接就可以互通使用
+            <br>
+            包括小票机，扫码枪，pos机构成完整的收银生态圈。
+        </div>
+        <img class="all-hardware-img" src="static/src/img/hardware/all-hardware.png" style="">
+    </div>
+
+    <!--<div class="main-single-border"></div>-->
+    <!--<div id="s4" class="main-content hardware-fifth">-->
+        <!--<div class="text-center font-title-b">-->
+            <!--规格-->
+        <!--</div>-->
+        <!--<table class="table-main" >-->
+            <!--<tr>-->
+                <!--<td class="td-one">颜色</td>-->
+                <!--<td class="td-two">红色、白色</td>-->
+            <!--</tr>-->
+            <!--<tr style="background-color:#f7f7f7">-->
+                <!--<td class="td-one" style="border-bottom:none;padding-bottom:12px">尺寸</td>-->
+                <!--<td class="td-two" style="border-bottom:none;padding-bottom:12px;padding-top:18px">身高：239.9mm</td>-->
+            <!--</tr>-->
+            <!--<tr style="background-color:#f7f7f7">-->
+                <!--<td></td>-->
+                <!--<td class="td-two" style="border-bottom:none;border-top:none;padding-bottom:12px;">宽度：239.9mm</td>-->
+            <!--</tr>-->
+            <!--<tr style="background-color:#f7f7f7">-->
+                <!--<td></td>-->
+                <!--<td class="td-two" style="border-top:none;padding-bottom:18px;">深度：239.9mm</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td class="td-one" style="border-bottom:none;padding-bottom:12px">支持级台</td>-->
+                <!--<td class="td-two" style="border-bottom:none;padding-bottom:12px;padding-top:18px">iPad(第四代，闪电接口)</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td class="td-two" style="border-top:none;padding-bottom:18px;">iPad(第四代，闪电接口）</td>-->
+            <!--</tr>-->
+            <!--<tr style="background-color:#f7f7f7">-->
+                <!--<td class="td-one">重量</td>-->
+                <!--<td class="td-two">4英镑，15盎司</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td class="td-one">台面空间</td>-->
+                <!--<td class="td-two">所需空间完全旋转13.13英寸（339.3mm）</td>-->
+            <!--</tr>-->
+            <!--<tr style="background-color:#f7f7f7">-->
+                <!--<td class="td-one" style="border-bottom:none;padding-bottom:12px">安装方式</td>-->
+                <!--<td class="td-two" style="border-bottom:none;padding-bottom:12px;padding-top:18px">接通电源-支架插入电源适配器</td>-->
+            <!--</tr>-->
+            <!--<tr style="background-color:#f7f7f7">-->
+                <!--<td></td>-->
+                <!--<td class="td-two" style="border-top:none;padding-bottom:18px;">低功耗模式-支架被拔出并运行</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td class="td-one" style="border-bottom:none;padding-bottom:12px">功耗模式</td>-->
+                <!--<td class="td-two" style="border-bottom:none;padding-bottom:12px;padding-top:18px">接通电源-支架插入电源适配器</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td class="td-two" style="border-top:none;padding-bottom:18px;">低功耗模式-支架被拔出并运行</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    <!--</div>-->
+    <!--<div class="main-single-border"></div>-->
+    <!--<div id="s2"  class="main-content hardware-price">-->
+        <!--<div class="text-center font-title-b">-->
+            <!--价格-->
+        <!--</div>-->
+        <!--<div class="hardware-bg">-->
+            <!--<div class="text-center hardware-price-number">-->
+                <!--￥6999-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+{% endblock %}

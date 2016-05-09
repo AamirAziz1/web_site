@@ -1,0 +1,162 @@
+body{
+    background-color:#f3f5f7;
+}
+#header-register{
+    height:70px;
+    border-bottom:#e7e7e7;
+    box-shadow:0 0 20px #e7e7e7;
+    background-color:#fff;
+    text-align:center;
+}
+#header-register #logo{
+    margin:0 auto;
+    height:70px;
+    width:202px;
+    float:none;
+}
+#header-register #logo img{
+    height:70px;
+    text-align:center;
+
+}
+#app-container .container {
+    background-color:#fff;
+    border:1px solid #e7e7e7;
+    margin-top:55px;
+    border-radius:4px!important;
+}
+.nh-blue{
+    background-color:#7aa2f1;
+    color:#fff;
+}
+#btn-next{
+    padding:10px 35px;
+}
+
+/*	Stage  */
+.stage-container {
+			border-bottom: 1px solid #dadada;
+			padding: 50px 0px 4px;
+		}
+.stage{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    min-height: 112px;
+}
+.stage-content{
+        width: 153px;
+    max-height: 52px;
+    margin: 0 auto;
+}
+.stage:before{
+    left:0;
+}
+.stage:after{
+    right:0;
+}
+.stage:first-child:before{
+    display:none;
+}
+.stage:first-child + .stage +  .stage:after { display: none; }
+ .stage:before,.stage:after {
+    position: absolute;
+    background-color: #eaeaea;
+    top: 50%;
+    margin-top: -37px;
+    width: 50%;
+    height: 5px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    content: '';
+}
+		.stage-container .stage:before,
+		.stage-container .stage:after						{ background-color: #eaeaea; }  /*  Set color for STAGE LINE  */
+		.stage-container .stage-header						{ background-color: #eaeaea; }  /*	Set background color for STAGE HEADER  */
+		.stage-container .stage-title						{ color: #464646; }				/*	Set color for STAGE TITLE  */
+		.stage-container .stage-info						{ color: #a8a8a8;}				/*	Set color for STAGE INFO  */
+		/*	end Stage  */
+
+		/*	Current stage  */
+		.stage-container .stage.tmm-current .stage-header		{ background-color: #578ebe;border:none; }	/*	Set background color for CURRENT STAGE  */	
+		.stage-container .stage.tmm-current .stage-header.head-number   { color: #fff; }				/*	Set color for CURRENT STAGE TEXT  */
+		.stage-container .stage.tmm-current:after,
+		.stage-container .stage.tmm-current:before				{ background-color: #578ebe;border:none; }	/*	Set background color for CURRENT STAGE LINE  */
+		/*	end Current stage  */
+
+		/*	Success stage  */
+		.stage-container .stage.tmm-success .stage-header		{ background-color: #92cf5c; }	/*	Set background color for SUCCESS STAGE  */	
+		.stage-container .stage.tmm-success .stage-header.head-number { color: #3c611b; }				/*	Set color for SUCCESS STAGE TEXT  */
+		.stage-container .stage.tmm-success:after,
+		.stage-container .stage.tmm-success:before				{ background-color: #92cf5c; }	/*	Set background color for SUCCESS STAGE LINE  */
+		.stage-container .stage.tmm-success .stage-header:after { color: #92cf5c; }				/*  Set color for SUCCESS STAGE ICON  */
+		/*	end Success stage  */
+.stage-container .stage-header {
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					background-color: #eaeaea;
+					text-align: center;
+					font-size: 20px;
+					color: #a9a9a9;
+					border: 1px solid #d9d9d9;
+					position: relative;
+					z-index: 1;
+                                        
+					-webkit-border-radius: 50%;
+							border-radius: 50%;
+				}
+                                
+                                .stage-container .stage-header.head-number {
+                                    color: #a9a9a9;
+                                    font-family: 'Arial', sans-serif;
+                                    font-weight: bold;
+                                    color: #a9a9a9;
+                                    font-family: 'Arial', sans-serif;
+                                    font-weight: bold;
+                                    margin-bottom: 7px;
+                                    line-height:50px;
+                                }
+
+				.stage-container .stage-content {
+					width: 153px;
+					padding-left: 17px;
+					max-height: 52px;
+					margin: 0 auto;
+				}
+
+					.stage-container .stage-title {
+						font: 400 15px 'calibriregular', sans-serif;
+						color: #464646;
+						padding: 10px 0;
+						text-align: center;
+					}
+
+					.stage-container .stage-info {
+						text-align: left;
+						color: #a8a8a8;
+						font-family: 'calibriregular', sans-serif;
+						font-size: 11px;
+						line-height: 1.4;
+					}
+        
+@media (max-width:767px){
+    .stage-container{
+        display:none;
+    }
+}
+@media (min-width: 1200px){
+#app-container .container {
+    width: 970px;
+}
+}
+@media (min-width: 992px){
+#app-container .container #body{
+    width: 50%;
+    margin:0 auto;
+}
+}
+
+#register-footer #copyrights{
+    background:none;
+}

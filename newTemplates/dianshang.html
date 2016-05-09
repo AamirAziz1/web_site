@@ -1,0 +1,366 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  '店尚-ERP'
+</script>
+    <div class="main-bg dianshang-top-bg">
+        <div class="main-content dianshang-top" style="color:white">
+            <div class="font-title-w">店尚ERP  简约而不简单</div>
+            <div class="font-title-second">简单、强大、免费更新的管理软件。
+            </div>
+            <div class="font-title-second">
+                集收银、预约、拓客、后台管理等一系
+                <br>
+                列功能于一身的系统解决方案。</div>
+        </div>
+    </div>
+
+<!--单页导航   add by 刘浩-->
+    <div  id="s1" class="mian-onepage-nav two-hidden all-hidden">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">基本功能</a>
+            <a class="btn btn-inside-nav " href="#s2">全平台</a>
+            <a class="btn btn-inside-nav " href="#s3">特色与服务</a>
+            <a class="btn btn-inside-nav " href="#s4">更多功能</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="mian-onepage-nav onepage-nav-fix two-hidden all-hidden" id="onepage-nav-fix">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">基本功能</a>
+            <a class="btn btn-inside-nav " href="#s2">全平台</a>
+            <a class="btn btn-inside-nav " href="#s3">特色与服务</a>
+            <a class="btn btn-inside-nav " href="#s4">更多功能</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+<!--end-->
+    <div class="main-content dianshang-second"  style="color:#999999">
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-4.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    POS收银
+                </div>
+                <div class="hardware-font-content text-center">
+                    指间收银，支持多终端操作。自带多种支付方式，尊享极致收银体验。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-3.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    产品管理
+                </div>
+                <div class="hardware-font-content text-center">
+                    统一数据化产品管理模式，同步更新多平台。（天猫，微商，微卡等平台）
+                </div>
+            </div>
+        </div>
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-2.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    人力资源
+                </div>
+                <div class="hardware-font-content text-center">
+                    数据信息化管理员工目录、考勤、绩效等让业绩提成自动计算精确无误。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-1.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    安全管理
+                </div>
+                <div class="hardware-font-content text-center">
+                    管理用户的权限，管理可登陆的设备，可随时解绑离职员工的设备与权限。
+                </div>
+            </div>
+        </div>
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-8.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    在线预约
+                </div>
+                <div class="hardware-font-content text-center">
+                    顾客可以线上预约时间、产品与技师，系统定时提醒，随时查看预约列表。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-7.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    会员管理
+                </div>
+                <div class="hardware-font-content text-center">
+                    管理客户信息，全方位掌握客户消费与反馈，定制个性化会员卡方案。
+                </div>
+            </div>
+        </div>
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-6.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    市场营销
+                </div>
+                <div class="hardware-font-content text-center">
+                    营销活动，朋友圈，摇周边，背书礼品卡券等15条营销拓客法则。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img class="grid-4-img" src="static/src/img/dianshang/2-5.png" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    数据报表
+                </div>
+                <div class="hardware-font-content text-center">
+                    记录每时每刻，使用手机随时查看销售情况与营业报表，管控店内状况。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="s2" class="site-dianshang-content2">
+        <div class="site-dianshang-content2-wrapper">
+            <div class="site-dianshang-content2-title">手机、PC、平板跨平台无缝连接</div>
+            <div class="site-dianshang-content2-body">
+                <div class="site-dianshang-content2-body-content">从会计服务、库存管理、市场销售到每一笔收银，店尚都陪伴您左右。</div>
+            </div>
+            <img src="static/src/img/dianshang/3.png" class="dianshang-big-img">
+        </div>
+    </div>
+
+    <div id="s3" class="site-dianshang-content3">
+        <div class="site-dianshang-content3-wrapper ">
+
+            <div class="site-dianshang-content3-img-wrapper one-hidden two-hidden">
+                <tr valign=top >
+                    <td colspan=3>
+                        <a onMouseOver="dian_tu_ove()" onMouseOut="dianou()" style="cursor:hand">
+                            <img id="pay_img" src="static/src/img/hardware/Padpay.png" height=225px width="320px" name="slide" border=0 style="transition:opacity .3s ease-in-out">
+                        </a>
+                    </td>
+                </tr>
+            </div>
+
+            <div class="site-dianshang-content3-img-wrapper all-hidden">
+                <tr valign=top >
+                    <td colspan=3>
+                        <a onMouseOver="dian_tu_ove()" onMouseOut="dianou()" style="cursor:hand">
+                            <img id="pay_img" src="static/src/img/hardware/Padpay.png" height=398px width="582px" name="slide" border=0 style="transition:opacity .3s ease-in-out">
+                        </a>
+                    </td>
+                </tr>
+            </div>
+            <div class="site-dianshang-content3-right">
+                <div class="site-dianshang-content3-right-title">收银即拓客</div>
+                <div class="site-dianshang-content3-right-body">
+                    <div class="site-dianshang-content3-right-body-content">在手指间轻松解决繁琐的原始工作，同时让每一位到店的消费会员都成为你的互联网口碑广告。</div>
+                </div>
+                <div class="site-dianshang-content3-right-subtitle">轻松预约</div>
+                <div class="site-dianshang-content3-right-body-content" style="margin-bottom: 36px;">顾客通过微卡提前预约，收银系统会反馈到一体机、PC端、手机端，实时了解顾客需求。</div>
+                <!--<div class="site-dianshang-content3-right-more"><a href="">了解更多相关信息></a></div>-->
+            </div>
+
+
+        </div>
+    </div>
+    <div class="site-dianshang-content3">
+        <div class="site-dianshang-content3-wrapper2">
+            <img src="static/src/img/dianshang/10.png" class="dianshang-10-img" >
+            <div class="dianshang-content4">
+                <div class="site-dianshang-content3-right-title">移动办公</div>
+                <div class="site-dianshang-content3-right-body">
+                    <div class="site-dianshang-content3-right-body-content">科技让我们可以充分利用碎片时间办公，让我们可以有更多的时间可以了解市场信息、做经营决策、享受生活。</div>
+                </div>
+                <div class="site-dianshang-content3-right-subtitle">轻松管理</div>
+                <div class="site-dianshang-content3-right-body-content" style="margin-bottom: 36px;">移动的门店管理后台，报表查看、门店经营、会员管理、产品项目管理等等，手机上都能轻松实现。</div>
+                <!--<div class="site-dianshang-content3-right-more"><a href="">了解更多相关信息></a></div>-->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="site-dianshang-content3">
+        <div class="site-dianshang-content4-wrapper">
+            <div class="site-dianshang-content4-up">
+                <div class="site-dianshang-content4-up-left">
+                    <div class="site-dianshang-content3-right-title">各行各业</div>
+                    <div class="site-dianshang-content4-up-left-body">
+                        <div class="site-dianshang-content3-right-body-content">博采众长，集于一身，功能岂止于大。模块化管理，根据不同行业，不同需求快速定制开发。</div>
+                    </div>
+                </div>
+                <div class="site-dianshang-content4-up-img-wrapper">
+                    <img class="site-dianshang-content4-img" src="static/src/img/dianshang/4-2.png">
+                </div>
+            </div>
+            <div class="site-dianshang-content4-down">
+                <div class="site-dianshang-content4-down-left-img-wrapper">
+                    <img class="site-dianshang-content4-img" src="static/src/img/dianshang/4-4.png">
+                </div>
+                <div class="site-dianshang-content4-down-right-img-wrapper">
+                    <img class="site-dianshang-content4-img" src="static/src/img/dianshang/4-3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="s4" class="main-bg dianshang-app all-hidden">
+        <div class="text-center font-title-b">
+            应用市场
+        </div>
+        <div class="text-center site-dianshang-content1-content">
+            集合多功能于一身，您可以添加您想要的模块，实现个性化管理工具。
+        </div>
+        <div class="main-content">
+            <div class="dianshang-app-item">
+                <div class="dianshang-app-item-content">
+                    <img src="static/src/img/dianshang/5-1.png" class="dianshang-app-item-img">
+                        <div class="font-title-second">
+                            多门店
+                        </div>
+                        <div class="site-dianshang-content1-content">
+                            系统支持连锁店模式，可分开设置各店账号以及产品等信息。各分店由各店长独自管理，总负责人可以查看各个店的营收状况。可支持跨店搜索和支付。
+                        </div>
+                </div>
+            </div>
+            <div class="dianshang-app-item">
+                <div class="dianshang-app-item-content">
+                    <img src="static/src/img/dianshang/5-2.png" class="dianshang-app-item-img">
+                        <div class="font-title-second">
+                            采购
+                        </div>
+                        <div class="site-dianshang-content1-content">
+                            可在平台上管理企业资源和采购业务，能够独立执行采购业务，也可与上游的订货业务及下游的订单中心、库存中心、账务中心等子模块无缝衔接，进行综合应用。
+
+                        </div>
+                </div>
+            </div>
+            <div class="dianshang-app-item">
+                <div class="dianshang-app-item-content">
+                    <img src="static/src/img/dianshang/5-3.png" class="dianshang-app-item-img">
+                        <div class="font-title-second">
+                            库存
+                        </div>
+                        <div class="site-dianshang-content1-content">
+                            管理企业全盘库存数据，具有先进理念的复式库存管理，减少库存处理的时间，削减库存积压并且在系统中能找到所有库存移动的方向和数据，从而可以使得货品库存效益最大化。
+
+                        </div>
+                </div>
+            </div>
+            <div class="dianshang-app-item">
+                <div class="dianshang-app-item-content">
+                    <img src="static/src/img/dianshang/5-4.png" class="dianshang-app-item-img">
+                        <div class="font-title-second">
+                            财务
+                        </div>
+                        <div class="site-dianshang-content1-content">
+                            对所有业务往来账务进行管理，在财会中自动获得实时库存价值报表。通过实践表，项目模块，票据，成本等集成您的会计分析操作，系统将依据您的业务规则自动进行账务分析。
+                        </div>
+                </div>
+            </div>
+            <div class="dianshang-app-item">
+                <div class="dianshang-app-item-content" style="padding-bottom: 52px;">
+                    <img src="static/src/img/dianshang/5-5.png" class="dianshang-app-item-img">
+                        <div class="font-title-second">
+                            对接接口（淘宝、天猫、京东）
+                        </div>
+                        <div class="site-dianshang-content1-content">
+                            多平台对接，引流平台潜在客源，利用平台优势消化大量货品，借用支付宝等工具可以获得更强大的云数据分析，营销将变得更为精准。
+                        </div>
+                </div>
+            </div>
+            <div  class="dianshang-app-item">
+                <div class="dianshang-app-item-content">
+                    <img src="static/src/img/dianshang/5-6.png" class="dianshang-app-item-img">
+                        <div class="font-title-second">
+                            电商与微电商
+                            <br><br>
+                        </div>
+                        <div class="site-dianshang-content1-content">
+                            直销模式结合信任经济+分享经济模式，通过搭建新一代的电商销售体系，实现线上线下互通，利用去中心化流量聚合来沉淀粉丝客户，从此门店迈入移动电商时代。
+                        </div>
+                </div>
+            </div>
+        <!--<div class="site-dianshang-content5-right-more"><a href="/site/support">了解更多应用  ></a></div>-->
+
+        </div>
+
+
+    </div>
+<script type="text/javascript">
+//slideimages数组为变换的图
+var slideimages=new Array();
+slideimages[0]="static/src/img/hardware/Padpay.png";
+slideimages[1]="static/src/img/dianshang/yuyue.png";
+
+
+
+//焦点图初始内容－－start
+var slidespeed=10000
+
+var filterArray=new Array();
+filterArray[0]="progid:DXImageTransform.Microsoft.Pixelate (enabled=false,duration=2,maxSquare=25 )";
+filterArray[1]="progid:DXImageTransform.Microsoft.Stretch (duration=1,stretchStyle=PUSH)";
+filterArray[2]="progid:DXImageTransform.Microsoft.Stretch(duration=1)";
+filterArray[3]="progid:DXImageTransform.Microsoft.Slide(bands=8, duration=1)";
+filterArray[4]="progid:DXImageTransform.Microsoft.Fade ( duration=1,overlap=0.25 )";
+
+var imageholder=new Array()
+var ie55=window.createPopup
+for (i=0;i<slideimages.length;i++){
+	imageholder[i]=new Image()
+	imageholder[i].src=slideimages[i]
+}
+function dian_tu_ove(){clearTimeout(setID)}
+function dianou(){slideit()}
+				var whichlink=0
+				var whichimage=0
+				function slideit(){
+                    document.images.slide.style.filter=filterArray[whichimage];
+                    //拓客显示了解更多其他不显示
+                    //if (whichimage==0){
+                    //    document.getElementById("more").style.visibility="visible";
+                    //}else{
+                    //    document.getElementById("more").style.visibility="hidden";
+                    //}
+                    //文字与图片同步更换
+                    //document.getElementById("title").innerText = title[whichimage]
+                    //document.getElementById("content").innerText = content[whichimage]
+                    //alert(document.images.slide.style.filter);
+                    pixeldelay=(ie55)? (document.images.slide.filters[0].duration*1000) : 0
+                    //alert(pixeldelay);
+                    if (!document.images) return
+                    if (ie55) {
+                            document.images.slide.filters[0].apply();
+                            document.images.slide.filters[0].play();
+                    }
+                    document.images.slide.src=imageholder[whichimage].src;
+                    if (ie55) document.images.slide.filters[0].play();
+                    whichlink=whichimage;
+                    whichimage=(whichimage<slideimages.length-1)? whichimage+1 : 0
+                    setID=setTimeout("slideit()",slidespeed+pixeldelay)
+
+				}
+				slideit()
+				function ove(n){
+					clearTimeout(setID)
+					whichimage=n;
+					document.images.slide.src=imageholder[whichimage].src
+				}
+
+
+</script>
+{% endblock %}

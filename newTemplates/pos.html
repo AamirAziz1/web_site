@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  'IPAD收银'
+</script>
+    <div class="main-bg pos-top-bg">
+        <div class="main-content">
+            <div class="pos-top-title">
+                IPAD收银功能
+            </div>
+            <div class="pos-top-content">
+                智能收银、高效管理、页面简洁、操作简单
+            </div>
+        </div>
+        <div class="img-bg pos-bg">
+        </div>
+    </div>
+    <div class="mian-onepage-nav two-hidden all-hidden">
+        <div class="main-content single-page-nav ">
+            <a class="btn btn-inside-nav " href="#s1">快捷收银</a>
+            <a class="btn btn-inside-nav " href="#s2">安全支付</a>
+            <a class="btn btn-inside-nav " href="#s3">业绩分配</a>
+            <a class="btn btn-inside-nav " href="#s4">免费预约</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="mian-onepage-nav onepage-nav-fix " id="onepage-nav-fix">
+        <div class="main-content single-page-nav">
+            <a class="btn btn-inside-nav " href="#s1">快捷收银</a>
+            <a class="btn btn-inside-nav " href="#s2">安全支付</a>
+            <a class="btn btn-inside-nav " href="#s3">业绩分配</a>
+            <a class="btn btn-inside-nav " href="#s4">免费预约</a>
+            <button onclick="showTel('sale_tel')" class="btn pull-right btn-inside-nav btn-inside-b" name="tel">销售电话</button>
+        </div>
+    </div>
+    <div class="main-content pos-first">
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/pos/2-3.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    收银配件无缝结合
+                </div>
+                <div class="hardware-font-content text-center" style="color:#999999">
+                    可连接pos机、扫码枪、小票机、钱箱等多种配件，供您任意搭配。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/pos/2-2.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    业绩分配方便高效
+                </div>
+                <div class="hardware-font-content text-center" style="color:#999999">
+                    收银完就可以分配，自动统计员工业绩提成，员工提成准确、简单明了。
+                </div>
+            </div>
+        </div>
+        <div class="grid-4-form">
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/pos/2-4.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    免费预约
+                </div>
+                <div class="hardware-font-content text-center" style="color:#999999">
+                   实现项目预约的在线管理，会员微卡主动预约，商家分分钟收到提醒。
+                </div>
+            </div>
+            <div class="grid-4">
+                <div class="text-center">
+                    <img src="static/src/img/pos/2-1.png" class="grid-4-img" >
+                </div>
+                <div class="hardware-second-title text-center" style="color:#404040">
+                    安全支付有保障
+                </div>
+                <div class="hardware-font-content text-center" style="color:#999999">
+                    致力为广大用户提供安全快速的电子支付方式，支付成功后消费信息即刻推送至电子卡包，实时查看有保障。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="s1" class="main-content pos-second">
+        <div class="pos-fenge" >
+            <div class="text-center pos-fenge-img" >
+                <img class="pos-flag-img" src="static/src/img/pos/3.png">
+            </div>
+            <div class="pos-fenge-line"></div>
+        </div>
+        <div class="font-title-b text-center" >
+            快捷收银-方便高效的PC、移动端软件
+        </div>
+        <div class="pos-font-content font-content text-center">
+            集产品选择、扫码收银、小票打印、业绩分配四大功能，支持多种支付方式，快速
+            <br>
+            实现日常收银活动。自动关联后台系统，数据安全有保障。
+        </div>
+        <img src="static/src/img/pos/4.png" class="pos-img-4">
+    </div>
+    <div id="s2" class="main-bg pos-third" style="background-image: url('static/src/img/pos/5.jpg');">
+        <div class="main-content">
+            <div class="pull-right">
+                <img src="static/src/img/pos/6.png" class="pos-pay-top-img">
+                <div class="font-title-w" >
+                    多样化的支付体系
+                </div>
+                <div class="font-content pos-pay-content">
+                    拥有微信支付、支付宝支付、会员卡支付、银联刷卡支付、现金支付等多样化的支付方式，从根本上满足商家线上、线下多渠道的收银需求。
+                </div>
+
+                <div class="font-title-second all-hidden" style="color:#f0f0f0">
+                    6种支付方式
+                </div>
+                <div class="font-content  all-hidden" style="color:#f0f0f0">
+                    <div class="pull-left" style="width:130px">
+                        会员卡支付
+                        <img src="static/src/img/pos/6-2.png" class="pull-right">
+                    </div>
+                    <div class="pull-left" style="width:130px;margin-left:30px">
+                        银行卡支付
+                        <img src="static/src/img/pos/6-2.png" class="pull-right">
+                    </div>
+                    <div class="pull-left" style="width:130px;margin-left:30px">
+                        现金支付
+                        <img src="static/src/img/pos/6-2.png" class="pull-right">
+                    </div>
+                </div>
+                <div class="font-content  all-hidden" style="color:#f0f0f0;padding-top:0px">
+                    <div class="pull-left" style="width:130px">
+                        微信支付
+                        <img src="static/src/img/pos/6-2.png" class="pull-right">
+                    </div>
+                    <div class="pull-left" style="width:130px;margin-left:30px">
+                        礼品卡券支付
+                        <img src="static/src/img/pos/6-2.png" class="pull-right">
+                    </div>
+                    <div class="pull-left" style="width:130px;margin-left:30px">
+                        支付宝支付
+                        <img src="static/src/img/pos/6-2.png" class="pull-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="s3" class="main-content pos-s3 ">
+        <div class="pos-s3-content">
+            <img class="pos-flag-img" src="static/src/img/pos/7-1.png">
+            <div class="font-title-b" style="padding-top: 20px;">
+                升级优惠券体系
+            </div>
+            <div class="font-two pos-s3-small-content">
+                将优惠券分享到朋友圈，即可为您带来成百上千的客户，客户分享后还有惊喜得到，让每一个客户都成为您的免费营销员。
+            </div>
+        </div>
+        <img class="pull-right two-hidden all-hidden" src="static/src/img/pos/7-2.png" style="padding-top: 100px;width:632px">
+    </div>
+    <div id="s4" class="main-bg pos-s4" style="background-image: url('static/src/img/pos/8-2.jpg');">
+        <div class="main-content pos-s4-content">
+            <div style="padding-top:70px" >
+                <div class="text-center" style="width:112px;background-color: transparent;margin-left:auto;margin-right:auto">
+                    <img class="pos-flag-img" src="static/src/img/pos/9.png">
+                </div>
+            </div>
+
+            <div class="font-title-b text-center" style="color:white;padding-top:20px">
+               更完美的会员营销
+            </div>
+            <div class="font-two text-center pos-s4-small-content" style="MARGIN-RIGHT: auto;MARGIN-LEFT: auto;color:rgba(255, 255, 255, 0.5)">
+                 所有通过关注微信、店内注册、优惠券发送的用户都可以成为您的会员，通过优惠券赠送、分享返利、等级折扣、积分兑换等会员营销方式，可迅速增加回头客。
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center bottom-regiest-part" >
+        <div class="font-title-b text-center">
+            放心交给我们，我们将提供最好的服务
+        </div>
+        <div class="font-two text-center" style="padding-top:30px;">
+            我们秉承简约至尚的理念，专注于产品优化，竭尽所能为您提供最优质的用户体验
+        </div>
+        <a class="btn btn-main-info bottom-regiest-btn" href="/site/register">注册</a>
+    </div>
+{% endblock %}

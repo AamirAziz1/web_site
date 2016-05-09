@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    document.getElementsByTagName('title')[0].innerHTML =  '申请'
+</script>
+<div class="main-bg all-hidden" style="background-image: url('static/src/img/investment/5.jpg');height:400px">
+    <div class="main-content">
+        <div class="font-title-w" style="padding-top:165px">
+            即刻与我们取得联系
+            <br>
+            成为日后肩并肩合作的伙伴！
+        </div>
+    </div>
+</div>
+<div class="text-center font-title-b" style="color:#269cd9;padding-top:80px">
+    申请
+</div>
+<div class="font-content text-center" style="color:#999999;padding-top:40px;">
+            致力目标行业的整合与进步，希望也有您一份付出与收获，请致电：400-633-0515
+            <br>
+            由店尚渠道部专业团队为您详解。
+</div>
+<div class="main-single-border" style="margin-top:40px;margin-bottom:40px"></div>
+<div class="main-content">
+                    	<div id="message" class="alert" style="display:none;width: 200px; margin-left: auto;margin-right: auto;margin-bottom: 0px;text-align: center;font-size: 30px;">
+									            <strong style="color:red;" id="message_desc"></strong>
+									         </div>
+    <form action="/site/invest_post" id="invest_signup" name="invest_signup" method="POST" class="invest_form" >
+        <div style="margin-top:40px">
+            <input type="text" class="invest_form_input_left" placeholder="姓名" id="support_name" name="name">
+            <input type="tel" class="invest_form_input_right" placeholder="电话" id="support_phone" name="phone">
+        </div>
+        <div style="margin-top:10px">
+            <input type="email" class="invest_form_input_left" placeholder="E-mail" id="support_email" name="email">
+            <input type="text" class="invest_form_input_right" placeholder="地址" id="support_address" name="address">
+        </div>
+        <div style="margin-top:10px">
+            <textarea type="text" class="invest_form_input_big" placeholder="备注" id="support_content" name="content"></textarea>
+        </div>
+        <div>
+            <div class="btn-out-b">
+                <button id="btn-post" class="btn btn-in-b-green">提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+
+        $('#btn-post').click(function() {
+            var form = document.invest_signup;
+            var	message="";
+            if(form.name.value == ""){
+                message="请输入姓名";
+                form.name.focus();
+            }else if(form.phone.value == ""){
+                message="请输入手机号码";
+                form.phone.focus();
+            }else if(form.email.value == ""){
+                message="请输入E-mail";
+                form.email.focus();
+            }else if(form.address.value == ""){
+                message="请输入地址";
+                form.address.focus();
+            }
+            if(message!=""){
+                $('#message').show();
+                $('#message_desc').text(message);
+                return false;
+            }else{
+                return true;
+            }
+        });
+</script>
+{% endblock %}

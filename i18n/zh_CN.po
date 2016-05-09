@@ -1,0 +1,471 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* site
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-18 15:00+0000\n"
+"PO-Revision-Date: 2016-03-18 15:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: site
+#: model:mail.template,body_html:site.company_signup_email
+msgid "\n"
+"	            \n"
+"					<div>你好 ${object.contact_name},</div>\n"
+"					<br>\n"
+"					<div>&nbsp;&nbsp;&nbsp;&nbsp;您的公司已经注册完成，请点击下面的链接地址激活帐号。</div>\n"
+"					<div>http://www.we-erp.com/site/account_active?email=${object.email}&key=${object.email_active_key}</div>\n"
+"					<br>\n"
+"					<table>	\n"
+"						<tr>\n"
+"                        	<td style=\" text-align: left\">\n"
+"	                        	<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;\">\n"
+"	                            1. 为确保我们的信息不被当做垃圾邮件处理，请把店尚 <a style=\"color: #0066cc; text-decoration: none;\" target=\"_blank\"\n"
+"	                                                           href=\"mailto:weerp@we-erp.com\">weerp@we-erp.com</a>添加为您的联系人！\n"
+"	                        	</p>\n"
+"	                            <p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;\">\n"
+"	                                2.您之所以收到这封邮件，是因为您曾经注册成为店尚的用户。我们保证仅向您发送关店尚相关服务的电子邮件。店尚尊重并保护您的隐私。\n"
+"	                            </p>\n"
+"	                            <p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;\">\n"
+"	                                3.任何问题欢迎您致电或邮件联系店尚客服中心：<span  onclick=\"return false;\"  data=\"400-633-0515\">400-633-0515</span>。如有问题也请访问\n"
+"	                                <a style=\"color: #0066cc; text-decoration: none;\"  href=\"http://www.we-erp.com\"  target=\"_blank\">帮助中心</a>.\n"
+"	                            </p>\n"
+"                            </td>\n"
+"                    	</tr>\n"
+"  					</table>\n"
+"				\n"
+"			"
+msgstr "\n"
+"	            \n"
+"					<div>你好 ${object.contact_name},</div>\n"
+"					<br>\n"
+"					<div>&nbsp;&nbsp;&nbsp;&nbsp;您的公司已经注册完成，请点击下面的链接地址激活帐号。</div>\n"
+"					<div>http://www.we-erp.com/site/account_active?email=${object.email}&key=${object.email_active_key}</div>\n"
+"					<br>\n"
+"					<table>	\n"
+"						<tr>\n"
+"                        	<td style=\" text-align: left\">\n"
+"	                        	<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;\">\n"
+"	                            1. 为确保我们的信息不被当做垃圾邮件处理，请把店尚 <a style=\"color: #0066cc; text-decoration: none;\" target=\"_blank\"\n"
+"	                                                           href=\"mailto:weerp@we-erp.com\">weerp@we-erp.com</a>添加为您的联系人！\n"
+"	                        	</p>\n"
+"	                            <p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;\">\n"
+"	                                2.您之所以收到这封邮件，是因为您曾经注册成为店尚的用户。我们保证仅向您发送关店尚相关服务的电子邮件。店尚尊重并保护您的隐私。\n"
+"	                            </p>\n"
+"	                            <p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;\">\n"
+"	                                3.任何问题欢迎您致电或邮件联系店尚客服中心：<span  onclick=\"return false;\"  data=\"400-633-0515\">400-633-0515</span>。如有问题也请访问\n"
+"	                                <a style=\"color: #0066cc; text-decoration: none;\"  href=\"http://www.we-erp.com\"  target=\"_blank\">帮助中心</a>.\n"
+"	                            </p>\n"
+"                            </td>\n"
+"                    	</tr>\n"
+"  					</table>\n"
+"				\n"
+"			"
+
+#. module: site
+#: model:mail.template,body_html:site.company_signup_notice_email
+msgid "\n"
+"	            \n"
+"	            	<div>你好 系统管理员，</div>\n"
+"	            	<div>&nbsp;&nbsp;&nbsp;&nbsp; ${object.name}在官网注册了店尚，请尽快处理。</div>\n"
+"	            	<div>联系人：${object.contact_name}。</div>\n"
+"				\n"
+"			"
+msgstr "\n"
+"	            \n"
+"	            	<div>你好 系统管理员，</div>\n"
+"	            	<div>&nbsp;&nbsp;&nbsp;&nbsp; ${object.name}在官网注册了店尚，请尽快处理。</div>\n"
+"	            	<div>联系人：${object.contact_name}。</div>\n"
+"				\n"
+"			"
+
+#. module: site
+#: model:mail.template,body_html:site.company_signup_success_email
+msgid "\n"
+"	            \n"
+"	            	<table cellpadding=\"0\" cellspacing=\"0\"\n"
+"                       style=\"width: 650px; margin: 0px auto; border: 1px solid #E6E6E6; border-collapse: collapse;\">\n"
+"                    <tbody>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <table>\n"
+"                                <tbody>\n"
+"                                <tr style=\"height: 75px;\">\n"
+"                                    <td style=\"width: 20px\"></td>\n"
+"                                    <td style=\"width: 200px\"><a\n"
+"                                            href=\"#\"\n"
+"                                            target=\"_blank\"><img target=\"_blank\" src=\"http://www.wevip.com/images/wevip/weerp_logo.png\" border=\"0\"></a></td>\n"
+"                \n"
+"                                    <td style=\"width: 400px\">\n"
+"                                        <table cellspacing=\"0\" cellpadding=\"0\" style=\"text-align: right; width: 100%%\">\n"
+"                                            <tbody>\n"
+"                \n"
+"                                            <tr>\n"
+"                                                <td height=\"5\" colspan=\"4\"></td>\n"
+"                                            </tr>\n"
+"                                            <tr>\n"
+"                                                <td colspan=\"4\"><a\n"
+"                                                        style=\"padding: 0 5px; font-size: 18px; color: #666666; text-decoration: none;\"\n"
+"                                                        target=\"_blank\"\n"
+"                                                        href=\"http://www.wevip.com\">店尚官网</a><span\n"
+"                                                        style=\"color: #999999; font-size: 12px;\">|</span><a\n"
+"                                                        style=\"padding: 0 5px; font-size: 18px; color: #666666; text-decoration: none;\"\n"
+"                                                        target=\"_blank\"\n"
+"                                                        href=\"http://www.we-erp.com\">拓客官网</a>\n"
+"                                                </td>\n"
+"                                            </tr>\n"
+"                                            </tbody>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                    <td style=\"width: 20px\"></td>\n"
+"                                </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <table>\n"
+"                                <tbody>\n"
+"                                <tr>\n"
+"                                    <td width=\"18\"></td>\n"
+"                                    <td>\n"
+"                                        <table cellpadding=\"0\" cellspacing=\"0\" style=\"text-align: left\">\n"
+"                                            <tbody>\n"
+"                                            <tr>\n"
+"                                                <td>\n"
+"                                                	<p><strong style=\"color: #333; font-size: 14px\"></strong></p>\n"
+"                                                    <p><strong style=\"color: #333; font-size: 14px\">亲爱的 ${object.email}:</strong></p>\n"
+"                                                    <p style=\"line-height: 21px; font-size: 12px;\">您好!欢迎入驻[店尚系统]，请妥善保管您的账户信息：<br>\n"
+"									                                                       登录帐号：${object.phone} <br>\n"
+"									                                                        密码：${object.password} <br>\n"
+"									                                                        激活码：<strong  style=\"color: #CC0000\">${object.code}</strong> <br>\n"
+"                                                       <strong>请您注意：激活收银客户端时需要使用该激活码，如果您没有提交注册申请，请立即忽略并删除这封邮件。</strong>\n"
+"                                                    </p>\n"
+"                                                  	<p style=\"margin-bottom:5px;margin-bottom:5px;line-height:1.3em;font-size:12px;\">此为系统邮件，请勿回复</p>\n"
+"                                                 </td>\n"
+"                                            </tr>\n"
+"                                            <tr>\n"
+"	                                            <td style=\"text-align: left;margin-top:30px;\">\n"
+"	                                            	<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;\">\n"
+"	                            					1. 为确保我们的信息不被当做垃圾邮件处理，请把店尚 <a style=\"color: #0066cc; text-decoration: none;\" target=\"_blank\"\n"
+"	                                                           href=\"mailto:weerp@we-erp.com\">weerp@we-erp.com</a>添加为您的联系人！\n"
+"	                        						</p>\n"
+"	                \n"
+"	                            					<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;\">\n"
+"	                                				2.您之所以收到这封邮件，是因为您曾经注册成为店尚的用户。我们保证仅向您发送关于店尚相关服务的电子邮件。店尚尊重并保护您的隐私。\n"
+"	                                				</p>\n"
+"	                            					<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;\">\n"
+"	                                				3.任何问题欢迎您致电或邮件联系店尚客服中心：<span style=\"border-bottom:1px dashed #ccc;z-index:1\"\n"
+"	                                                                                        t=\"6\" onclick=\"return false;\" data=\"400-633-0515\">400-633-0515</span>。如有问题也请访问\n"
+"	                                				<a style=\"color: #0066cc; text-decoration: none;\" href=\"http://www.we-erp.com\" target=\"_blank\">帮助中心</a>。 \n"
+"	                                				</p>\n"
+"	                                			</td>\n"
+"                                			</tr>\n"
+"                                            </tbody>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"				\n"
+"			"
+msgstr "\n"
+"	            \n"
+"	            	<table cellpadding=\"0\" cellspacing=\"0\"\n"
+"                       style=\"width: 650px; margin: 0px auto; border: 1px solid #E6E6E6; border-collapse: collapse;\">\n"
+"                    <tbody>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <table>\n"
+"                                <tbody>\n"
+"                                <tr style=\"height: 75px;\">\n"
+"                                    <td style=\"width: 20px\"></td>\n"
+"                                    <td style=\"width: 200px\"><a\n"
+"                                            href=\"#\"\n"
+"                                            target=\"_blank\"><img target=\"_blank\" src=\"http://www.wevip.com/images/wevip/weerp_logo.png\" border=\"0\"></a></td>\n"
+"                \n"
+"                                    <td style=\"width: 400px\">\n"
+"                                        <table cellspacing=\"0\" cellpadding=\"0\" style=\"text-align: right; width: 100%%\">\n"
+"                                            <tbody>\n"
+"                \n"
+"                                            <tr>\n"
+"                                                <td height=\"5\" colspan=\"4\"></td>\n"
+"                                            </tr>\n"
+"                                            <tr>\n"
+"                                                <td colspan=\"4\"><a\n"
+"                                                        style=\"padding: 0 5px; font-size: 18px; color: #666666; text-decoration: none;\"\n"
+"                                                        target=\"_blank\"\n"
+"                                                        href=\"http://www.wevip.com\">店尚官网</a><span\n"
+"                                                        style=\"color: #999999; font-size: 12px;\">|</span><a\n"
+"                                                        style=\"padding: 0 5px; font-size: 18px; color: #666666; text-decoration: none;\"\n"
+"                                                        target=\"_blank\"\n"
+"                                                        href=\"http://www.we-erp.com\">拓客官网</a>\n"
+"                                                </td>\n"
+"                                            </tr>\n"
+"                                            </tbody>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                    <td style=\"width: 20px\"></td>\n"
+"                                </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td>\n"
+"                            <table>\n"
+"                                <tbody>\n"
+"                                <tr>\n"
+"                                    <td width=\"18\"></td>\n"
+"                                    <td>\n"
+"                                        <table cellpadding=\"0\" cellspacing=\"0\" style=\"text-align: left\">\n"
+"                                            <tbody>\n"
+"                                            <tr>\n"
+"                                                <td>\n"
+"                                                	<p><strong style=\"color: #333; font-size: 14px\"></strong></p>\n"
+"                                                    <p><strong style=\"color: #333; font-size: 14px\">亲爱的 ${object.email}:</strong></p>\n"
+"                                                    <p style=\"line-height: 21px; font-size: 12px;\">您好!欢迎入驻[店尚系统]，请妥善保管您的账户信息：<br>\n"
+"									                                                       登录帐号：${object.phone} <br>\n"
+"									                                                        密码：${object.password} <br>\n"
+"									                                                        激活码：<strong  style=\"color: #CC0000\">${object.code}</strong> <br>\n"
+"                                                       <strong>请您注意：激活收银客户端时需要使用该激活码，如果您没有提交注册申请，请立即忽略并删除这封邮件。</strong>\n"
+"                                                    </p>\n"
+"                                                  	<p style=\"margin-bottom:5px;margin-bottom:5px;line-height:1.3em;font-size:12px;\">此为系统邮件，请勿回复</p>\n"
+"                                                 </td>\n"
+"                                            </tr>\n"
+"                                            <tr>\n"
+"	                                            <td style=\"text-align: left;margin-top:30px;\">\n"
+"	                                            	<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;\">\n"
+"	                            					1. 为确保我们的信息不被当做垃圾邮件处理，请把店尚 <a style=\"color: #0066cc; text-decoration: none;\" target=\"_blank\"\n"
+"	                                                           href=\"mailto:weerp@we-erp.com\">weerp@we-erp.com</a>添加为您的联系人！\n"
+"	                        						</p>\n"
+"	                \n"
+"	                            					<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px;  font-size: 12px;\">\n"
+"	                                				2.您之所以收到这封邮件，是因为您曾经注册成为店尚的用户。我们保证仅向您发送关于店尚相关服务的电子邮件。店尚尊重并保护您的隐私。\n"
+"	                                				</p>\n"
+"	                            					<p style=\"margin: 0; padding-left: 10; padding-right: 10; line-height: 22px; font-size: 12px;\">\n"
+"	                                				3.任何问题欢迎您致电或邮件联系店尚客服中心：<span style=\"border-bottom:1px dashed #ccc;z-index:1\"\n"
+"	                                                                                        t=\"6\" onclick=\"return false;\" data=\"400-633-0515\">400-633-0515</span>。如有问题也请访问\n"
+"	                                				<a style=\"color: #0066cc; text-decoration: none;\" href=\"http://www.we-erp.com\" target=\"_blank\">帮助中心</a>。 \n"
+"	                                				</p>\n"
+"	                                			</td>\n"
+"                                			</tr>\n"
+"                                            </tbody>\n"
+"                                        </table>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"				\n"
+"			"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_res_users_supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# 供应商发票"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_res_users_purchase_order_count
+msgid "# of Purchase Order"
+msgstr "# 采购单"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_needaction
+msgid "Action Needed"
+msgstr "行动迫在眉睫"
+
+#. module: site
+#: model:ir.model,name:site.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_born_template_db_create_uid
+#: model:ir.model.fields,field_description:site.field_born_version_create_uid
+#: model:ir.model.fields,field_description:site.field_born_version_groups_create_uid
+#: model:ir.model.fields,field_description:site.field_control_panel_wizard_create_uid
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_create_uid
+#: model:ir.model.fields,field_description:site.field_features_authorization_wizard_create_uid
+msgid "Created by"
+msgstr "创建人"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_born_template_db_create_date
+#: model:ir.model.fields,field_description:site.field_born_version_create_date
+#: model:ir.model.fields,field_description:site.field_born_version_groups_create_date
+#: model:ir.model.fields,field_description:site.field_control_panel_wizard_create_date
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_create_date
+#: model:ir.model.fields,field_description:site.field_features_authorization_wizard_create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: site
+#: model:ir.model.fields,help:site.field_duplicate_database_wizard_message_last_post
+msgid "Date of the last message posted on the record."
+msgstr "记录中最后发布信息的日期"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_born_template_db_display_name
+#: model:ir.model.fields,field_description:site.field_born_version_display_name
+#: model:ir.model.fields,field_description:site.field_born_version_groups_display_name
+#: model:ir.model.fields,field_description:site.field_control_panel_wizard_display_name
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_display_name
+#: model:ir.model.fields,field_description:site.field_features_authorization_wizard_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_follower_ids
+msgid "Followers"
+msgstr "关注者"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_channel_ids
+msgid "Followers (Channels)"
+msgstr "关注者（频道）"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_partner_ids
+msgid "Followers (Partners)"
+msgstr "关注者（合作伙伴）"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_born_template_db_id
+#: model:ir.model.fields,field_description:site.field_born_version_groups_id
+#: model:ir.model.fields,field_description:site.field_born_version_id
+#: model:ir.model.fields,field_description:site.field_control_panel_wizard_id
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_id
+#: model:ir.model.fields,field_description:site.field_features_authorization_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: site
+#: model:ir.model.fields,help:site.field_duplicate_database_wizard_message_unread
+msgid "If checked new messages require your attention."
+msgstr "如果要求你关注新消息，勾选此项"
+
+#. module: site
+#: model:ir.model.fields,help:site.field_duplicate_database_wizard_message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "如果选择，需要注意查看新消息"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_is_follower
+msgid "Is Follower"
+msgstr "是关注者"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_last_post
+msgid "Last Message Date"
+msgstr "最近信息日期"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_born_template_db___last_update
+#: model:ir.model.fields,field_description:site.field_born_version___last_update
+#: model:ir.model.fields,field_description:site.field_born_version_groups___last_update
+#: model:ir.model.fields,field_description:site.field_control_panel_wizard___last_update
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard___last_update
+#: model:ir.model.fields,field_description:site.field_features_authorization_wizard___last_update
+msgid "Last Modified on"
+msgstr "最近修改日期"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_born_template_db_write_uid
+#: model:ir.model.fields,field_description:site.field_born_version_groups_write_uid
+#: model:ir.model.fields,field_description:site.field_born_version_write_uid
+#: model:ir.model.fields,field_description:site.field_control_panel_wizard_write_uid
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_write_uid
+#: model:ir.model.fields,field_description:site.field_features_authorization_wizard_write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_born_template_db_write_date
+#: model:ir.model.fields,field_description:site.field_born_version_groups_write_date
+#: model:ir.model.fields,field_description:site.field_born_version_write_date
+#: model:ir.model.fields,field_description:site.field_control_panel_wizard_write_date
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_write_date
+#: model:ir.model.fields,field_description:site.field_features_authorization_wizard_write_date
+msgid "Last Updated on"
+msgstr "最后更新时间"
+
+#. module: site
+#: model:ir.ui.view,arch_db:site.duplicate_database_copy_wizard_form
+#: model:ir.ui.view,arch_db:site.features_authorization_wizard_form
+#: model:ir.ui.view,arch_db:site.saas_control_panel_wizard_form
+msgid "Message"
+msgstr "信息"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_ids
+msgid "Messages"
+msgstr "消息"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_needaction_counter
+msgid "Number of Actions"
+msgstr "行动个数"
+
+#. module: site
+#: model:ir.model.fields,help:site.field_duplicate_database_wizard_message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "需要行动的消息数"
+
+#. module: site
+#: model:ir.model.fields,help:site.field_duplicate_database_wizard_message_unread_counter
+msgid "Number of unread messages"
+msgstr "未读信息数量"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_res_users_property_purchase_currency_id
+msgid "Supplier Currency"
+msgstr "供应商货币"
+
+#. module: site
+#: model:ir.model.fields,help:site.field_res_users_property_purchase_currency_id
+msgid "This currency will be used, instead of the default one, for purchases from the current partner"
+msgstr "对于从这个业务伙伴的采购，这个货币将被使用，替代默认货币。"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_unread
+msgid "Unread Messages"
+msgstr "未读信息"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_duplicate_database_wizard_message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "未读消息计数"
+
+#. module: site
+#: model:ir.model,name:site.model_res_users
+msgid "Users"
+msgstr "用户"
+
+#. module: site
+#: model:ir.model.fields,field_description:site.field_res_company_is_ipad
+#: model:ir.model.fields,help:site.field_res_company_is_ipad
+msgid "是否允许使用PAD MENU"
+msgstr "是否允许使用PAD MENU"
+
+#. module: site
+#: model:ir.model.fields,help:site.field_born_version_groups_group_id
+msgid "权限id"
+msgstr "权限id"
+
